@@ -1,22 +1,25 @@
 <form class="form-design" action="" method="POST">
-    <fieldset>
+    <fieldset class="form-fieldset">
         <fieldset class="form-design-name">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
         </fieldset>
         <fieldset class="form-design-blackground">
             <label for="option">Elige un color de fondo:</label><br>
-            <label for="negro">Negro</label>
-            <input id="negro" type="radio" name="background"><br>
-
             <label for="blanco">Blanco</label>
-            <input id="blaco" type="radio" name="background"><br>
+            <input id="blanco" type="radio" name="background"><br>
 
-            <label for="celeste">Celeste</label>
-            <input id="celeste" type="radio" name="background"><br>
+            <label for="gris-claro">Gris claro</label>
+            <input id="gris-claro" type="radio" name="background"><br>
 
-            <label for="morado">Morado</label>
-            <input id="morado" type="radio" name="background"><br>
+            <label for="amarillo-pastel">Amarillo pastel</label>
+            <input id="amarillo-pastel" type="radio" name="background"><br>
+
+            <label for="azul-claro">Azul claro</label>
+            <input id="azul-claro" type="radio" name="background"><br>
+
+            <label for="morado-claro">Morado claro</label>
+            <input id="morado-claro" type="radio" name="background"><br>
         </fieldset>
 
         <fieldset class="form-design-font">
@@ -25,16 +28,20 @@
             <input id="negro" type="radio" name="font"><br>
 
             <label for="blanco">Blanco</label>
-            <input id="blaco" type="radio" name="font"><br>
+            <input id="blanco" type="radio" name="font"><br>
 
-            <label for="celeste">Celeste</label>
-            <input id="celeste" type="radio" name="font"><br>
+            <label for="gris">Gris</label>
+            <input id="gris" type="radio" name="font"><br>
+
+            <label for="morado-claro">Morado claro</label>
+            <input id="morado-claro" type="radio" name="font"><br>
 
             <label for="morado">Morado</label>
             <input id="morado" type="radio" name="font"><br>
         </fieldset>
-       <fieldset class="form-design-img">
-        <p>Añade tu imagen</p>
-       </fieldset>
+        <fieldset class="form-design-img">
+            <label for="">Añade tu imagen</label><br>
+            <input type="file" accept="image/png,image/jpeg">
+        </fieldset>
 
 </form>
