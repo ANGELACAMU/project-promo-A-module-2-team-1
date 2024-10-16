@@ -4,6 +4,11 @@
     font-family: $fontText1;
     height: 85px;
     margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+        
     @media (min-width: 1300px) {
             height: 101px;
             display: flex;
