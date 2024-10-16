@@ -1,7 +1,6 @@
 .footer {
     background-color: $colorFont4;
     color: $colorFont2;
-
     font-family: $fontText1;
     height: 85px;
     margin-top: 50px;
@@ -26,8 +25,6 @@
     }
 }
 
-
-
 .fa-duotone{
     margin-top: 31px;
     height: 22px;
@@ -41,7 +38,6 @@
 
 .fa-copyright{
     color: $colorFont;
-
 }
 
 .fa-cat{
@@ -50,10 +46,17 @@ color: $colorFont
 
 .copy{
 color: $colorFont
-
 }
 
 .icons {
     margin-left: 50px;
     
+}
+
+.pushfoot{
+    width: 100px;
+    display: none;
+    @media (min-width: 1300px){
+        display: block;
+    }
 }
