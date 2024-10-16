@@ -1,5 +1,9 @@
+.fieldset-card {
+    font-family: $fontText1;
+
+}
+
 .share {
-    font-family: 'Times New Roman', Times, serif ;
     font-size: 12px;
 
 }
@@ -10,12 +14,14 @@
     align-items: center;
     justify-content: center;
     
+    
     &_button {
         font-size:12px ;
         border: none;
-        background-color:     blue;
-        color: beige;
-        padding: 5px;
+        border-radius: 7px;
+        background-color: $colorFont3;
+        color: $colorFont;
+        padding: 8px;
     }
 
 }
@@ -24,8 +30,9 @@
 .button-twitter {
     font-size: 12px;
     border: none;
-    background-color: blue;
-    color: beige;
+    border-radius: 7px;
+    background-color: $colorFont3;
+    color: $colorFont;
     padding: 5px;
 
 }
