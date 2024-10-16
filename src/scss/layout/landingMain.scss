@@ -1,6 +1,13 @@
 .img-landing {
     text-align: center;
     background: $colorFont5;
+    width: 100%;
+
+}
+
+.cat-play {
+    width: 100%;
+    height: auto;
 
 }
 
@@ -8,4 +15,36 @@
     display: flex;
     justify-content: center;
     background: $colorFont5;
+
+
+}
+
+.button-empezar {
+    background-color: #8458B3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 92px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.button-empezar:hover {
+    background-color: #D0BDF4;
+    transform: scale(1.05);
+}
+
+@media (min-width:768px) {
+    .img-landing {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width:1024px) {
+    .img-landing {
+        width: 100%;
+    }
+
+    .cat-play {}
 }
