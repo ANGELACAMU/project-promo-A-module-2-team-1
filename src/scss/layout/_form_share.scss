@@ -22,17 +22,39 @@
         background-color: $colorFont3;
         color: $colorFont;
         padding: 8px;
+
+        &_icon1 {
+            width: 20px;
+
+        }
     }
 
 }
 
-    
-.button-twitter {
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_twitter {
     font-size: 12px;
     border: none;
     border-radius: 7px;
     background-color: $colorFont3;
     color: $colorFont;
     padding: 5px;
+    
 
+    &_icon2{
+        width: 20px;
+        
+
+    }
+
+}
+
+.div-provisional {
+    margin: 5%;
 }
