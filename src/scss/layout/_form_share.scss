@@ -28,6 +28,10 @@
         background-color: $colorFont3;
         color: $colorFont;
         padding: 8px;
+            &:hover {
+            color: $colorFont4;
+            background-color: $colorFont2;
+            }
 
         &_icon1 {
             width: 20px;
@@ -52,7 +56,10 @@
     background-color: $colorFont3;
     color: $colorFont;
     padding: 5px;
-    
+    &:hover{
+        color: $colorFont4;
+        background-color: $colorFont2;
+    }
 
     &_icon2{
         width: 20px;
