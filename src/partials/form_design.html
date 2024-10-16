@@ -1,25 +1,41 @@
 <form action="" method="POST">
     <fieldset>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <fieldset>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </fieldset>
+        <fieldset>
+            <label for="option">Elige un color de fondo:</label><br>
+            <label for="negro">Negro</label>
+            <input id="negro" type="checkbox" name="negro"><br>
 
-        <label for="option">Elige un color de fondo:</label>
-        <select id="option" name="option">
-            <option value="">--Selecciona un color--</option>
-            <!-- Colores para el background -->
-            <option type="checkbox" value="">rosa</option>
-            <option value="">amarillo</option>
-            <option value="">verde</option>
-            <option value="">morado</option>
-            <!-- colores fuente -->
-            <label for="option">Elige un color de fuente:</label>
-            <select id="option" name="option">
-                <option value="">--Selecciona un color--</option>
-                <option value="">negro</option>
-                <option value="">blanco</option>
-                <option value="">morado</option>
-                <option value="">celeste</option>
+            <label for="blanco">Blanco</label>
+            <input id="blaco" type="checkbox" name="blanco"><br>
 
-                <!-- Añadir imagen -->
+            <label for="celeste">Celeste</label>
+            <input id="celeste" type="checkbox" name="celeste"><br>
+
+            <label for="morado">Morado</label>
+            <input id="morado" type="checkbox" name="morado"><br>
+        </fieldset>
+
+        <fieldset>
+            <p>Elige un color de fuente:</p>
+            <label for="negro">Negro</label>
+            <input id="negro" type="checkbox" name="negro"><br>
+
+            <label for="blanco">Blanco</label>
+            <input id="blaco" type="checkbox" name="blanco"><br>
+
+            <label for="celeste">Celeste</label>
+            <input id="celeste" type="checkbox" name="celeste"><br>
+
+            <label for="morado">Morado</label>
+            <input id="morado" type="checkbox" name="morado"><br>
+        </fieldset>
+        <!-- Añadir imagen -->
+       <fieldset>
+        <p>Añade tu imagen</p>
+       </fieldset>
 
 </form>
