@@ -3,6 +3,15 @@
   font-family: $fontText1;
 }
 
+fieldset{
+  border: 1px solid $colorFont4; /* Cambia el color del borde */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+.form-titles{
+  font-size: 20px;
+}
+
 input[type="radio"] {
   accent-color: $colorFont3;
 }

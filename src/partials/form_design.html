@@ -1,11 +1,13 @@
 <form class="form-design" action="" method="POST">
+
     <fieldset class="form-fieldset">
+        <h1>Diseña</h1>
         <fieldset class="form-design-name">
-            <label for="nombre">Nombre:</label>
+            <label class="form-titles" for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
         </fieldset>
         <fieldset class="form-design-blackground">
-            <label for="option">Elige un color de fondo:</label><br>
+            <label class="form-titles" for="option">Elige un color de fondo:</label><br><br>
             <label for="blanco">Blanco</label>
             <input id="blanco" type="radio" name="background"><br>
 
@@ -23,7 +25,7 @@
         </fieldset>
 
         <fieldset class="form-design-font">
-            <p>Elige un color de fuente:</p>
+            <p class="form-titles">Elige un color de fuente:</p> <br>
             <label for="negro">Negro</label>
             <input id="negro" type="radio" name="font"><br>
 
@@ -40,7 +42,7 @@
             <input id="morado" type="radio" name="font"><br>
         </fieldset>
         <fieldset class="form-design-img">
-            <label for="">Añade tu imagen</label><br>
+            <label class="form-titles" for="">Añade tu imagen</label><br><br>
             <input type="file" accept="image/png,image/jpeg">
         </fieldset>
 
