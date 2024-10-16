@@ -1,0 +1,46 @@
+.footer {
+    background-color: $colorFont4;
+    color: $colorFont2;
+    font-family: $fontText2;
+    height: 85px;
+    margin-top: 50px;
+}
+
+.fa-brands {
+    margin-top: 31px;
+    height: 22px;
+    color: $colorFont2;
+&:hover {
+        color: $colorFont5;
+        transform: rotate(15deg)
+    }
+}
+
+
+
+.fa-duotone{
+    margin-top: 31px;
+    height: 22px;
+    color: $colorFont2;
+&:hover {
+        color: $colorFont5;
+        transform: rotate(15deg)
+    }
+}
+
+.fa-copyright{
+    color: $colorFont;
+
+}
+
+.fa-cat{
+color: $colorFont
+}
+
+.copy{
+color: $colorFont
+}
+
+.icons {
+    margin-left: 50px;
+}
