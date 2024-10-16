@@ -4,14 +4,23 @@
 
 }
 
-.button-card {
-    font-size: 12px ;
-    border: none;
-    background-color: blue;
-    color: beige;
-    padding: 5px;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    &_button {
+        font-size:12px ;
+        border: none;
+        background-color:     blue;
+        color: beige;
+        padding: 5px;
+    }
+
 }
 
+    
 .button-twitter {
     font-size: 12px;
     border: none;
