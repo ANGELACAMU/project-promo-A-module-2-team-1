@@ -1,5 +1,11 @@
 .fieldset-card {
     font-family: $fontText1;
+    border: 1px solid $colorFont4;
+        /* Cambia el color del borde */
+    border-radius: 10px;
+        /* Bordes redondeados */
+    padding: 20px;
+        /* Espaciado interno */
 
 }
 
@@ -36,6 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // Esto no está sirviendo para nada
 }
 
 .button_twitter {
