@@ -35,7 +35,7 @@
     color: $colorFont;
     padding: 10px 20px;
     border: none;
-    border-radius: 92px;
+    border-radius: 9px;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s;
 }
@@ -48,6 +48,7 @@
 
 @media (min-width:768px) {
     .img-landing {
+
         text-align: center;
         width: 100%;
     }
@@ -56,15 +57,25 @@
 @media (min-width:1024px) {
     .img-landing {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    .button-landing {
+    .container {
         display: flex;
-        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    .button-empezar {
+        display: flex;
+        margin: 25px;
+        margin-top: 219px;
     }
 
     .text-landing {
         display: flex;
+        font-size: 32px;
 
     }
 
