@@ -10,6 +10,9 @@
 .title-design {
   border: 1px solid $colorFont4;
   padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 fieldset {
