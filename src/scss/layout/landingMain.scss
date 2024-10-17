@@ -58,8 +58,18 @@
         width: 100%;
     }
 
+    .button-landing {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .text-landing {
+        display: flex;
+
+    }
+
     .cat-play {
-        width: 40%;
+        width: 30vw;
     }
 
 }
