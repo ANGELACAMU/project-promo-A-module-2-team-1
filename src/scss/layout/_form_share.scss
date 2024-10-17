@@ -32,6 +32,9 @@
         background-color: $colorFont3;
         color: $colorFont;
         padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
             &:hover {
             color: $colorFont4;
             background-color: $colorFont2;
@@ -39,18 +42,11 @@
 
         &_icon1 {
             width: 20px;
+            margin-right: 5px;
 
         }
     }
 
-}
-
-
-.button2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // Esto no está sirviendo para nada
 }
 
 .button_twitter {
@@ -61,6 +57,10 @@
     background-color: $colorFont3;
     color: $colorFont;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     &:hover{
         color: $colorFont4;
         background-color: $colorFont2;
@@ -68,6 +68,7 @@
 
     &_icon2{
         width: 20px;
+        margin-right: 5px;
         
 
     }
