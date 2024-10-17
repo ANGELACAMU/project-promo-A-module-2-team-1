@@ -2,7 +2,11 @@
     text-align: center;
     background: $colorFont5;
     width: 100%;
+}
 
+.container {
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -48,9 +52,15 @@
 
 @media (min-width:768px) {
     .img-landing {
-
+        display: flex;
         text-align: center;
         width: 100%;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+
     }
 }
 
@@ -81,6 +91,7 @@
 
     .cat-play {
         width: 30vw;
+        height: 50vh;
     }
 
 }
