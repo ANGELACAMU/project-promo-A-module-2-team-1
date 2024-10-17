@@ -1,0 +1,34 @@
+body,
+html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    /* Asegura que el contenedor ocupe toda la altura */
+}
+
+.container {
+    display: flex;
+    /* Crea un contenedor flexible */
+    height: 100vh;
+    /* Ocupa toda la altura de la ventana */
+}
+
+.container-form {
+    flex: 1;
+    /* Ocupa el 50% del ancho */
+    padding: 20px;
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total */
+    background-color: #f9f9f9;
+    /* Color de fondo para el formulario */
+}
+
+.derecha {
+    flex: 1;
+    /* Ocupa el 50% del ancho */
+    padding: 20px;
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total */
+    background-color: #e0e0e0;
+    /* Color de fondo para la columna derecha */
+}
