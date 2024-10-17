@@ -1,12 +1,20 @@
 .form-design {
   color: $colorFont4;
   font-family: $fontText1;
+  border: 1px solid $colorFont4;
+  @media (min-width: 768px) and (min-width: 1024px){
+    width: 50%;
+  }
+}
+
+.title-design {
+  border: 1px solid $colorFont4;
+  padding: 5px;
 }
 
 fieldset {
-  border: 1px solid $colorFont4; /* Cambia el color del borde */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
+  border: none;
+  padding: 20px;
 }
 .form-titles {
   font-size: 20px;
@@ -25,20 +33,22 @@ input {
   display: flex;
   gap: 10px;
 }
-.colors{
+.colors {
   display: flex;
-    flex-direction: column;
-    gap: 7px;
-    margin-top: 15px;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 15px;
 }
 //paleta uno
 
-.paletteOne, .paletteTwo, .paletteThree {
+.paletteOne,
+.paletteTwo,
+.paletteThree {
   display: flex;
 }
 
 .paletteOne-one {
-  background-color: violet;
+  background-color: rgb(107, 106, 56);
   width: 15px;
   height: 15px;
 }
@@ -48,7 +58,7 @@ input {
   height: 15px;
 }
 .paletteOne-three {
-  background-color: rgb(107, 106, 56);
+  background-color: rgb(240, 132, 186);
   width: 15px;
   height: 15px;
 }
@@ -56,38 +66,38 @@ input {
 //paleta dos
 
 .paletteTwo-one {
-  background-color: rgb(80, 199, 238);
+  background-color: $colorFont3;
   width: 15px;
   height: 15px;
 }
 .paletteTwo-two {
-  background-color: rgb(137, 35, 205);
+  background-color:$colorFont5;
   width: 15px;
   height: 15px;
 }
 .paletteTwo-three {
-  background-color: rgb(70, 67, 67);
+  background-color: $colorFont4;
   width: 15px;
   height: 15px;
 }
 //paleta tres
 
 .paletteThree-one {
-  background-color: rgb(5, 183, 242);
-  width: 15px;
-  height: 15px;
-}
-.paletteThree-two {
-  background-color: rgb(212, 147, 56);
-  width: 15px;
-  height: 15px;
-}
-.paletteThree-three {
   background-color: rgb(31, 31, 31);
   width: 15px;
   height: 15px;
 }
-.archive{
+.paletteThree-two {
+  background-color: $colorFont;
+  width: 15px;
+  height: 15px;
+}
+.paletteThree-three {
+  background-color: rgb(212, 147, 56);
+  width: 15px;
+  height: 15px;
+}
+.archive {
   font-size: smaller;
-
+  margin-top: 3px;
 }
