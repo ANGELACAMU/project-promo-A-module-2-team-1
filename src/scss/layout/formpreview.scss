@@ -8,7 +8,6 @@ html {
 
 .container {
     display: flex;
-    /* Crea un contenedor flexible */
     height: 100vh;
     /* Ocupa toda la altura de la ventana */
 }
@@ -18,9 +17,8 @@ html {
     /* Ocupa el 50% del ancho */
     padding: 20px;
     box-sizing: border-box;
-    /* Incluye el padding en el ancho total */
     background-color: $colorFont2;
-    /* Color de fondo para el formulario */
+
 
 }
 
@@ -29,19 +27,10 @@ html {
     /* Ocupa el 50% del ancho */
     padding: 20px;
     box-sizing: border-box;
-    /* Incluye el padding en el ancho total */
     background-color: #e0e0e0;
-    /* Color de fondo para la columna derecha */
-    border: 2px solid #3498db;
-    /* Grosor, estilo y color del borde */
-    padding: 20px;
-    /* Espacio interno */
+    border: 2px solid $colorFont4;
     margin: 20px;
-    /* Espacio externo */
     height: 100%;
     border-radius: 5px;
-    /* Bordes redondeados (opcional) */
-    border: 2px solid #3498db;
-    /* Grosor, estilo y color del borde */
 
 }
