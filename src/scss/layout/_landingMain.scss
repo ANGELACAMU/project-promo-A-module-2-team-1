@@ -1,35 +1,29 @@
+
 .img-landing {
     text-align: center;
-    background: $colorFont5;
-    width: 100hv;
 }
 
 .cat-play {
-    width: 50%;
+    width: 80%;
     height: auto;
-
-
+    margin-top: 15px;
 }
 
 .text-landing {
     color: $colorFont3;
-    box-shadow: #494D5F;
     font-size: 20px;
     padding-bottom: 10px;
-
-
+    font-family: $fontText2;
+    margin: 50px;
 }
 
 .button-landing {
     display: flex;
     justify-content: center;
-    background: $colorFont5;
-
-
 }
 
 .button-empezar {
-    background-color: #8458B3;
+    background-color: $colorFont3;
     color: $colorFont;
     padding: 10px 20px;
     border: none;
@@ -39,7 +33,7 @@
 }
 
 .button-empezar:hover {
-    background-color: #D0BDF4;
+    background-color: $colorFont2;
     transform: scale(1.05);
     color: $colorFont4;
 }
