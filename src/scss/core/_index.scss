@@ -1,0 +1,11 @@
+html,
+body {
+    height: 100hv;
+    margin: 0;
+    color: $colorFont5;
+}
+
+.content {
+    min-height: calc(100vh - 100px);
+}
+
