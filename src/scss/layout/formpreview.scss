@@ -3,72 +3,64 @@ html {
     margin: 0;
     font-family: Arial, sans-serif;
     height: 100%;
-    /* Asegura que el contenedor ocupe toda la altura */
 }
 
 .container {
     display: flex;
     height: 100vh;
-    /* Ocupa toda la altura de la ventana */
 }
 
 .container-form {
     flex: 1;
-    /* Ocupa el 50% del ancho */
     padding: 20px;
     box-sizing: border-box;
     background-color: $colorFont2;
+    /* Reemplaza con tu color */
     border: 4px groove purple;
-
 }
 
 .derecha {
     flex: 1;
-    /* Ocupa el 50% del ancho */
     padding: 20px;
     box-sizing: border-box;
     background-color: #e0e0e0;
-    border: 2px solid $colorFont4;
+    border: 2px solid #333;
+    /* Reemplaza con tu color */
     margin: 20px;
     height: 100%;
     border-radius: 5px;
-    flex-direction: row;
-
+    display: flex;
+    /* Asegúrate de que los hijos se alineen correctamente */
+    flex-direction: column;
+    /* Cambié aquí para alinear elementos verticalmente */
 }
 
 .js-preview {
     display: flex;
     margin: 0;
-
 }
 
 .totoro-image {
     max-width: 25%;
-    /* La imagen no será más ancha que el contenedor */
     height: auto;
-    display: flex;
-
-
 }
 
 .container-preview {
     width: 300px;
-    /* Ancho */
     height: 300px;
-    /* Alto */
     border: 4px double $colorFont2;
-    /* Borde doble con color */
-    padding: 20px;
-    /* Espaciado interno */
-    border-radius: 5px;
-    /* Esquinas redondeadas */
+    /* Reemplaza con tu color */
     padding: 10px;
     margin-top: 20px;
     background-color: $colorFont3;
+    /* Reemplaza con tu color */
     color: $colorFont;
+    /* Reemplaza con tu color */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    /* Asegura que el contenido esté centrado verticalmente */
     margin: 20px auto;
     /* Centra el div horizontalmente */
 }
