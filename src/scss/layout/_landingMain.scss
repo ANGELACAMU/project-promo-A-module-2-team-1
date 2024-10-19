@@ -31,6 +31,11 @@
     border-radius: 92px;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s;
+    @media (min-width:1000px){
+        width: 250px;
+        height: 50px;
+        font-size: 25px;
+    }
 }
 .button-empezar:hover {
     background-color: $colorFont2;
