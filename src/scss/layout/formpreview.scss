@@ -54,9 +54,14 @@ html {
 .container-preview {
     width: 300px;
     /* Ancho */
-    height: 200px;
+    height: 300px;
     /* Alto */
-    border: 1px solid #ccc;
+    border: 4px double $colorFont2;
+    /* Borde doble con color */
+    padding: 20px;
+    /* Espaciado interno */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
     padding: 10px;
     margin-top: 20px;
     background-color: $colorFont3;
