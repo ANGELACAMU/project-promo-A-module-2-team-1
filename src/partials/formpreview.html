@@ -5,7 +5,7 @@
                 <h1>Diseña</h1>
                 <fieldset class="form-design-name">
                     <label class="form-titles" for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input class="js-name" type="text" id="nombre" name="nombre" required>
                 </fieldset>
                 <fieldset class="form-design-blackground">
                     <label class="form-titles" for="option">Elige un color de fondo:</label><br><br>
@@ -51,8 +51,9 @@
         </form>
     </div>
     <div class="derecha">
-        <h1 class="title js-preview">Soy un título</h1>
-        <p>Aquí puedes agregar más contenido, imágenes o cualquier otro elemento que desees mostrar junto al formulario.
-        </p>
+        <div class="container-preview">
+            <p class="title js-preview"> Aquí va tu nombre</p>
+            <img class="totoro-image" src="/images/totoro.png" alt="Totoro">
+        </div>
     </div>
 </div>

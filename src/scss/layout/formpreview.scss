@@ -18,7 +18,7 @@ html {
     padding: 20px;
     box-sizing: border-box;
     background-color: $colorFont2;
-
+    border: 4px groove purple;
 
 }
 
@@ -32,5 +32,38 @@ html {
     margin: 20px;
     height: 100%;
     border-radius: 5px;
+    flex-direction: row;
 
+}
+
+.js-preview {
+    display: flex;
+    margin: 0;
+
+}
+
+.totoro-image {
+    max-width: 25%;
+    /* La imagen no será más ancha que el contenedor */
+    height: auto;
+    display: flex;
+
+
+}
+
+.container-preview {
+    width: 300px;
+    /* Ancho */
+    height: 200px;
+    /* Alto */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: $colorFont3;
+    color: $colorFont;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    /* Centra el div horizontalmente */
 }

@@ -124,34 +124,26 @@ body {
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     .img-landing {
-        width: 100%;
-        display: flex;
         justify-content: center;
     }
 
-    .container {
-        display: flex;
-        align-items: center;
-
-    }
-
     .button-empezar {
-        display: flex;
         margin: 25px;
         margin-top: 219px;
+        /* Ajusta según tus necesidades */
     }
 
     .text-landing {
-        display: flex;
         font-size: 32px;
-
+        /* Aumenta el tamaño del texto en pantallas grandes */
     }
 
     .cat-play {
         width: 30vw;
+        /* Ajusta el ancho de la imagen */
         height: 50vh;
+        /* Ajusta la altura de la imagen */
     }
-
 }
