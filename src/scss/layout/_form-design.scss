@@ -1,0 +1,106 @@
+.form-design {
+  color: $colorFont4;
+  font-family: $fontText1;
+  border: 1px solid $colorFont4;
+  @media (min-width: 768px) and (min-width: 1024px) {
+    width: 50%;
+  }
+}
+
+.title-design {
+  border: 1px solid $colorFont4;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+  padding: 20px;
+}
+.form-titles {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  accent-color: $colorFont3;
+}
+
+input {
+  background-color: $colorFont3;
+  color: $colorFont;
+}
+
+.form-design-background label {
+  display: flex;
+  gap: 10px;
+}
+.colors {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 15px;
+}
+//paleta uno
+
+.paletteOne,
+.paletteTwo,
+.paletteThree {
+  display: flex;
+}
+
+.paletteOne-one {
+  background-color: rgb(107, 106, 56);
+  width: 15px;
+  height: 15px;
+}
+.paletteOne-two {
+  background-color: burlywood;
+  width: 15px;
+  height: 15px;
+}
+.paletteOne-three {
+  background-color: rgb(240, 132, 186);
+  width: 15px;
+  height: 15px;
+}
+
+//paleta dos
+
+.paletteTwo-one {
+  background-color: $colorFont3;
+  width: 15px;
+  height: 15px;
+}
+.paletteTwo-two {
+  background-color: $colorFont5;
+  width: 15px;
+  height: 15px;
+}
+.paletteTwo-three {
+  background-color: $colorFont4;
+  width: 15px;
+  height: 15px;
+}
+//paleta tres
+
+.paletteThree-one {
+  background-color: rgb(31, 31, 31);
+  width: 15px;
+  height: 15px;
+}
+.paletteThree-two {
+  background-color: $colorFont;
+  width: 15px;
+  height: 15px;
+}
+.paletteThree-three {
+  background-color: rgb(212, 147, 56);
+  width: 15px;
+  height: 15px;
+}
+.archive {
+  font-size: smaller;
+  margin-top: 3px;
+}
