@@ -1,0 +1,66 @@
+body,
+html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container-form {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $colorFont2;
+    /* Reemplaza con tu color */
+    border: 4px groove purple;
+}
+
+.derecha {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+    border: 2px solid #333;
+    /* Reemplaza con tu color */
+    margin: 20px;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    /* Asegúrate de que los hijos se alineen correctamente */
+    flex-direction: column;
+    /* Cambié aquí para alinear elementos verticalmente */
+}
+
+.js-preview {
+    display: flex;
+    margin: 0;
+}
+
+.totoro-image {
+    max-width: 25%;
+    height: auto;
+}
+
+.container-preview {
+    width: 300px;
+    height: 300px;
+    border: 4px double $colorFont2;
+    /* Reemplaza con tu color */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: $colorFont3;
+    /* Reemplaza con tu color */
+    color: $colorFont;
+    /* Reemplaza con tu color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Asegura que el contenido esté centrado verticalmente */
+    margin: 20px auto;
+    /* Centra el div horizontalmente */
+}

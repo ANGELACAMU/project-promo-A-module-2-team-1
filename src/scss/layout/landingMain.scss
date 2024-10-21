@@ -1,65 +1,151 @@
+// .img-landing {
+//     text-align: center;
+//     background: $colorFont5;
+//     width: 100%;
+// }
+
+// .container {
+//     display: flex;
+//     justify-content: center;
+
+// }
+
+// .cat-play {
+//     width: 100%;
+//     height: auto;
+
+
+// }
+
+// .text-landing {
+//     color: $colorFont3;
+//     box-shadow: #494D5F;
+//     font-size: 20px;
+//     padding-bottom: 10px;
+
+
+// }
+
+// .button-landing {
+//     display: flex;
+//     justify-content: center;
+//     background: $colorFont5;
+
+
+// }
+
+// .button-empezar {
+//     background-color: #8458B3;
+//     color: $colorFont;
+//     padding: 10px 20px;
+//     border: none;
+//     border-radius: 9px;
+//     cursor: pointer;
+//     transition: transform 0.2s, background-color 0.3s;
+// }
+
+// .button-empezar:hover {
+//     background-color: #D0BDF4;
+//     transform: scale(1.05);
+//     color: $colorFont4;
+// }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: $colorFont5;
+    /* Color de fondo */
+}
+
 .img-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background: $colorFont5;
-    width: 100%;
-
-
+    height: 100vh;
+    /* Altura completa de la pantalla */
+    padding: 20px;
 }
 
 .cat-play {
-    width: 100%;
+    max-width: 100%;
+    /* Ajusta la imagen a la pantalla */
     height: auto;
+    /* Mantiene la proporción */
+}
 
-
+.container {
+    margin-top: 20px;
+    /* Espacio entre la imagen y el contenido */
 }
 
 .text-landing {
-    color: $colorFont3;
-    box-shadow: #494D5F;
-    font-size: 20px;
-    padding-bottom: 10px;
-
-
-}
-
-.button-landing {
-    display: flex;
-    justify-content: center;
-    background: $colorFont5;
-
-
+    font-size: 18px;
+    /* Tamaño del texto */
+    margin-bottom: 10px;
+    /* Espacio entre el texto y el botón */
 }
 
 .button-empezar {
-    background-color: #8458B3;
-    color: $colorFont;
     padding: 10px 20px;
-    border: none;
-    border-radius: 92px;
+    /* Tamaño del botón */
+    font-size: 16px;
+    /* Tamaño del texto del botón */
     cursor: pointer;
-    transition: transform 0.2s, background-color 0.3s;
+    /* Cambia el cursor al pasar por encima */
+    border: none;
+    /* Sin borde */
+    background-color: $colorFont3;
+    /* Color de fondo del botón */
+    color: $colorFont;
+    /* Color del texto */
+    border-radius: 5px;
+    /* Bordes redondeados */
+
 }
 
 .button-empezar:hover {
-    background-color: #D0BDF4;
-    transform: scale(1.05);
+    background-color: $colorFont2;
     color: $colorFont4;
+    /* Color al pasar el ratón */
+    transform: scale(1.05);
 }
 
 @media (min-width:768px) {
     .img-landing {
+        display: flex;
         text-align: center;
         width: 100%;
     }
+
+    .container {
+        display: flex;
+        align-items: center;
+
+    }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     .img-landing {
-        width: 100%;
+        justify-content: center;
+    }
+
+    .button-empezar {
+        margin: 25px;
+        margin-top: 219px;
+        /* Ajusta según tus necesidades */
+    }
+
+    .text-landing {
+        font-size: 32px;
+        /* Aumenta el tamaño del texto en pantallas grandes */
     }
 
     .cat-play {
-        width: 40%;
+        width: 30vw;
+        /* Ajusta el ancho de la imagen */
+        height: 50vh;
+        /* Ajusta la altura de la imagen */
     }
-
 }
