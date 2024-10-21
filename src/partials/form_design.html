@@ -1,46 +1,49 @@
-<form class="form-design" action="" method="POST">
-    <div class="title-design">
-        <h2>Diseña</h2>
-        <a href=""> <i class="fa-solid fa-chevron-down"></i></a>
-    </div>
-    <fieldset class="form-fieldset">
-        <fieldset class="form-design-name">
-            <label class="form-titles" for="nombre"><strong>Nombre:</strong></label>
-            <input type="text" id="nombre" name="nombre" required>
+<div class="title-design form-design">
+    <h2>Diseña</h2>
+    <span class="fa-solid fa-chevron-down js-btn-add"></span>
+</div>
+<section class="js-collapsed">
+    <form class="form-design" action="" method="POST">
+
+        <fieldset class="form-fieldset">
+            <fieldset class="form-design-name">
+                <label class="form-titles" for="nombre"><strong>Nombre:</strong></label>
+                <input type="text" id="nombre" name="nombre" required>
+            </fieldset>
+            <fieldset class="form-design-background">
+                <h4>Elige una paleta de colores:</h4>
+                <div class="colors">
+                    <label for="p-one">
+                        <input id="p-one" type="radio" name="palette">
+                        <div class="paletteOne">
+                            <div class="paletteOne-one"></div>
+                            <div class="paletteOne-two"></div>
+                            <div class="paletteOne-three"></div>
+                        </div>
+                    </label>
+                    <label for="p-two">
+                        <input id="p-two" type="radio" name="palette">
+                        <div class="paletteTwo">
+                            <div class="paletteTwo-one"></div>
+                            <div class="paletteTwo-two"></div>
+                            <div class="paletteTwo-three"></div>
+                        </div>
+                    </label>
+                    <label for="p-three">
+                        <input id="p-three" type="radio" name="palette">
+                        <div class="paletteThree">
+                            <div class="paletteThree-one"></div>
+                            <div class="paletteThree-two"></div>
+                            <div class="paletteThree-three"></div>
+                        </div>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="form-design-img">
+                <h4 class="title-img">Añade tu imagen</h4>
+                <input type="file" accept="image/png,image/jpeg">
+                <p class="archive">*Solo admite archivos .png y .jpeg</p>
+            </fieldset>
         </fieldset>
-        <fieldset class="form-design-background">
-            <h4>Elige una paleta de colores:</h4>
-            <div class="colors">
-                <label for="p-one">
-                    <input id="p-one" type="radio" name="palette">
-                    <div class="paletteOne">
-                        <div class="paletteOne-one"></div>
-                        <div class="paletteOne-two"></div>
-                        <div class="paletteOne-three"></div>
-                    </div>
-                </label>
-                <label for="p-two">
-                    <input id="p-two" type="radio" name="palette">
-                    <div class="paletteTwo">
-                        <div class="paletteTwo-one"></div>
-                        <div class="paletteTwo-two"></div>
-                        <div class="paletteTwo-three"></div>
-                    </div>
-                </label>
-                <label for="p-three">
-                    <input id="p-three" type="radio" name="palette">
-                    <div class="paletteThree">
-                        <div class="paletteThree-one"></div>
-                        <div class="paletteThree-two"></div>
-                        <div class="paletteThree-three"></div>
-                    </div>
-                </label>
-            </div>
-        </fieldset>
-        <fieldset class="form-design-img">
-            <h4 class="title-img">Añade tu imagen</h4>
-            <input type="file" accept="image/png,image/jpeg">
-            <p class="archive">*Solo admite archivos .png y .jpeg</p>
-        </fieldset>
-    </fieldset>
-</form>
+    </form>
+</section>

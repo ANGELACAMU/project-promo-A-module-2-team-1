@@ -1,38 +1,10 @@
-body,
-html {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-}
 
-.container {
-    display: flex;
-    height: 100vh;
-}
 
-.container-form {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: $colorFont;
-    /* Reemplaza con tu color */
-    border: 4px groove purple;
-}
+
+
 
 .derecha {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #e0e0e0;
-    border: 2px solid #333;
-    /* Reemplaza con tu color */
-    margin: 20px;
-    height: 100%;
-    border-radius: 5px;
-    display: flex;
-    /* Asegúrate de que los hijos se alineen correctamente */
-    flex-direction: column;
-    /* Cambié aquí para alinear elementos verticalmente */
+    padding: 50px;
 }
 
 .js-preview {
@@ -41,7 +13,7 @@ html {
 }
 
 .totoro-image {
-    max-width: 25%;
+    max-width: 50%;
     height: auto;
 }
 
