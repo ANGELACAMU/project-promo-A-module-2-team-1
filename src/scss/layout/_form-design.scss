@@ -17,16 +17,10 @@
 
 fieldset {
   border: none;
-  padding: 20px;
+  padding: 10px;
 }
 
-
-fieldset{
-  border: 1px solid $colorFont4; /* Cambia el color del borde */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-}
-.form-titles{
+.form-titles {
   font-size: 20px;
 }
 
@@ -39,9 +33,11 @@ input {
   color: $colorFont;
 }
 
-.form-design-background label {
-  display: flex;
-  gap: 10px;
+.form-design-background {
+  label {
+    display: flex;
+    gap: 10px;
+  }
 }
 .colors {
   display: flex;
@@ -106,6 +102,9 @@ input {
   background-color: rgb(212, 147, 56);
   width: 15px;
   height: 15px;
+}
+.title-img{
+  margin-bottom: 5px;
 }
 .archive {
   font-size: smaller;
