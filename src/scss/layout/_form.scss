@@ -2,3 +2,12 @@ body {
   background-color: $colorFont;
 
 }
+
+@media (min-width: 1000px) {
+.padre{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+ }

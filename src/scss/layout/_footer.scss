@@ -2,21 +2,16 @@
     background-color: $colorFont4;
     color: $colorFont2;
     font-family: $fontText1;
-    height: 85px;
-    margin-top: 50px;
-    position:fixed;
+    top:0;
+    position: relative;
+    height: 100px;
+    padding: 20px;
     bottom: 0;
     left: 0;
     width: 100%;
+    
         
-    @media (min-width: 1300px) {
-            height: 101px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0px 131px 20px 131px;
-        }
+    
 }
 
 .fa-brands {
@@ -61,7 +56,20 @@ color: $colorFont
 .pushfoot{
     width: 100px;
     display: none;
-    @media (min-width: 1300px){
+
+}
+ 
+
+@media (min-width: 1000px) {
+    .footer{   
+    height: 101px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 131px 20px 131px;
+      }
+    .pushfoot{
         display: block;
     }
 }

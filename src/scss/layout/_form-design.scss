@@ -19,7 +19,14 @@ fieldset {
   border: none;
   padding: 20px;
 }
-.form-titles {
+
+
+fieldset{
+  border: 1px solid $colorFont4; /* Cambia el color del borde */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+.form-titles{
   font-size: 20px;
 }
 
