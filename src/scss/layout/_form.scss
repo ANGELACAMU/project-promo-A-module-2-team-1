@@ -1,13 +1,19 @@
 body {
   background-color: $colorFont;
-
 }
 
-@media (min-width: 1000px) {
-.padre{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+// @media (min-width: 1000px) {
+//   .padre {
+//     display: flex;
+//     flex-direction: row;
+//     width: 100%;
+//   }
+// }
+.form-general {
+  width: 100vw;
+  @media (min-width: 768px) and (min-width: 1024px) {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+  }
 }
-
- }
