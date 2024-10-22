@@ -15,3 +15,4 @@ inputSpecial.addEventListener("input", (event) => {
     title2.innerHTML = event.target.value;
 })
 
+
