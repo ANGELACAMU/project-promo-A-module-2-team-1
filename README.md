@@ -1,19 +1,36 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+![Pusheen](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fes%2Fpng-wgwbs&psig=AOvVaw1aBWcCiTMVI8Z1eCUArUAL&ust=1729709682646000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLi8-erUookDFQAAAAAdAAAAABAE)
 
-# Adalab web starter kit
+# PURR Skills
 
-Ahoy! Este es nuestro Starter Kit creado en **node y vite**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+Bienvenidx morador de miau-zmorras!
+En este proyecto de tintes pasteles, dirigido por Pusheen el dios cute de los gatos, usted puede personalizar su ficha de personaje purrrfecta con el kit mínimo para tener contento a su game miau-aster. 
+Podrá visualizar en la propia página los cambios e ir modificando las características de la ficha a su gusto gatuno.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+Sus características básicas son un diseño fácil de usar, intuitivo y flexible.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+Suerte en su aventura. Miau.
 
-- Los ficheros que están sueltos en la raíz del repositorio, como vite.config.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos (excepto este README.md, para describir tu proyecto).
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- La carpeta `public/`, que tiene fichero estáticos como imágenes, fuentes, favicon, librerías de JavaScript antiguas (jQuery, ...)
-- Y la carpeta `docs/`, que es generada automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/` y `public/`, los procesa y los genera dentro de `public/` y `docs/`.
 
-## Guía de inicio rápido
+
+## Instalación y configuración
+1. Clonar el repositorio.
+   Puedes acceder a él mediante este enlace:
+   https://github.com/ANGELACAMU/project-promo-A-module-2-team-1.git
+   
+2. Instalar las dependencias.
+   Escribiendo en la terminal:
+   npm install
+   
+4. Correr el proyecto.
+   Escribiendo en la terminal:
+   npm start
+
+
+
+
+
+
+### Guía de inicio rápido
 
 > **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
 
