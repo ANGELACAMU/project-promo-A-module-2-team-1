@@ -1,5 +1,3 @@
-
-
 // @media (min-width: 1000px) {
 //   .padre {
 //     display: flex;
@@ -8,31 +6,30 @@
 //   }
 // }
 
-.page-form{
+.page-form {
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: $colorFont2;
+  height: 900px;
 }
 
 .form-general {
-    width: 100%;
-    display: flex;
-    background-color: $colorFont;
-    @media (min-width: 768px) and (min-width: 1024px) {
-      width: 70vw;
-      .form-L,.form-R {
-          width: 50%;
-          box-sizing: border-box;
-          flex:1;
-        }
-      .form-R {
-        background-color: $colorFont; 
-       }
+  width: 100%;
+  display: flex;
+  background-color: $colorFont;
+  @media (min-width: 768px) and (min-width: 1024px) {
+    width: 70vw;
+    .form-L,
+    .form-R {
+      width: 50%;
     }
+    .form-R {
+      background-color: $colorFont;
+    }
+  }
 }
 
-.body-formulario{
+.body-formulario {
   height: 100vh;
 }
-
