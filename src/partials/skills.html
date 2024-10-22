@@ -11,22 +11,23 @@
             </div>
             <div>
                 <label for="blanco">Tank</label>
-                <input id="Tank" type="radio" name="background"><br>
+                <input class="js-tank" id="Tank" type="radio" value="Tank" name="background"><br>
             </div>
             <div>
                 <label for="Heal">Heal</label>
-                <input id="Tank" type="radio" name="background"><br>
+                <input class="js-heal" id="Tank" type="radio" value="Heal" name="background"><br>
             </div>
             <div>
                 <label for="DPS">DPS</label>
-                <input id="Tank" type="radio" name="background"><br>
+                <input class="js-dps" id="Tank" type="radio" value="DPS" name="background"><br>
             </div>
         </fieldset>
 
         <fieldset class="cc">
             <div>
                 <label class="form-titles" for="creatura"><strong>Criatura:</strong></label>
-                <select id="raza" name="raza">
+                <select class="js-list-creature" id="raza" name="raza">
+                    <option value="" disabled selected>Selecciona una criatura</option>
                     <option value="Draenei">Draenei</option>
                     <option value="Dragon">Dragon</option>
                     <option value="Elfo">Elfo</option>
@@ -48,7 +49,8 @@
             </div>
             <div>
                 <label class="form-titles" for="creatura"><strong>Clase:</strong></label>
-                <select id="clase" name="clase">
+                <select class="js-list-class" id="clase" name="clase">
+                    <option value="" disabled selected>Selecciona una clase</option>
                     <option value="Brujo">Brujo</option>
                     <option value="Caballero">Caballero</option>
                     <option value="Cazador">Cazador</option>
