@@ -7,21 +7,26 @@
 //     width: 100%;
 //   }
 // }
+
+.page-form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $colorFont2;
+}
+
 .form-general {
     width: 100%;
-    display: block;
+    display: flex;
     background-color: $colorFont;
-  
     @media (min-width: 768px) and (min-width: 1024px) {
-      width: 50vw;
-      display: flex;
-      flex-direction: row;
+      width: 70vw;
       .form-L,.form-R {
           width: 50%;
           box-sizing: border-box;
         }
       .form-R {
-        background-color: $colorFont2 
+        background-color: $colorFont; 
        }
     }
 }
