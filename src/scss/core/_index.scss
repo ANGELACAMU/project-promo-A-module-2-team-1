@@ -1,4 +1,4 @@
-html,
+
 .body {
   height: 100hv;
   margin: 0;
@@ -7,4 +7,8 @@ html,
 
 .content {
   min-height: calc(100vh - 100px);
+}
+
+.collapsed {
+    display: none;
 }

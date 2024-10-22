@@ -1,73 +1,83 @@
-<fieldset class=" form-design">
-    <h1>Skills</h1>
-    <fieldset class="form-skills">
-        <div>
-            <label class="skills-rol form-titles" for="option">Rol:</label><br><br>
-        </div>
-        <div>
-            <label for="blanco">Tank</label>
-            <input id="Tank" type="radio" name="background"><br>
-        </div>
-        <div>
-            <label for="Heal">Heal</label>
-            <input id="Tank" type="radio" name="background"><br>
-        </div>
-        <div>
-            <label for="DPS">DPS</label>
-            <input id="Tank" type="radio" name="background"><br>
-        </div>
+<div class="title-design form-design">
+    <h2>Skills</h2>
+    <span class="fa-solid fa-chevron-down js-btn-add-skill"></span>
+</div>
+<section class="js-collapsed-skill">
+    <fieldset class="form-design skillsDiv " action="" method="POST">
+
+        <fieldset class="form-skills">
+            <div>
+                <label class="skills-rol form-titles" for="option"><strong>Rol:</strong></label><br><br>
+            </div>
+            <div>
+                <label for="blanco">Tank</label>
+                <input id="Tank" type="radio" name="background"><br>
+            </div>
+            <div>
+                <label for="Heal">Heal</label>
+                <input id="Tank" type="radio" name="background"><br>
+            </div>
+            <div>
+                <label for="DPS">DPS</label>
+                <input id="Tank" type="radio" name="background"><br>
+            </div>
+        </fieldset>
+
+        <fieldset class="cc">
+            <div>
+                <label class="form-titles" for="creatura"><strong>Criatura:</strong></label>
+                <select id="raza" name="raza">
+                    <option value="Draenei">Draenei</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Elfo">Elfo</option>
+                    <option value="Enano">Enano</option>
+                    <option value="Ent">Ent</option>
+                    <option value="Gnomo">Gnomo</option>
+                    <option value="Hada">Hada</option>
+                    <option value="Hobbit">Hobbit</option>
+                    <option value="Hombre Lobo">Hombre Lobo</option>
+                    <option value="Humano">Humano</option>
+                    <option value="Mujer Lobo">Mujer Lobo</option>
+                    <option value="No-muerto">No-muerto</option>
+                    <option value="Orco">Orco</option>
+                    <option value="Trol">Trol</option>
+                    <option value="Trasgo">Trasgo</option>
+                    <option value="Vampiro">Vampiro</option>
+                    <option value="Zombie">Zombie</option>
+                </select>
+            </div>
+            <div>
+                <label class="form-titles" for="creatura"><strong>Clase:</strong></label>
+                <select id="clase" name="clase">
+                    <option value="Brujo">Brujo</option>
+                    <option value="Caballero">Caballero</option>
+                    <option value="Cazador">Cazador</option>
+                    <option value="Clerigo">Clerigo</option>
+                    <option value="Druida">Druida</option>
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Hechizero">Hechizero</option>
+                    <option value="Juglar">Juglar</option>
+                    <option value="Ladrón">Ladrón</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Místico">Místico</option>
+                    <option value="Mosquetero">Mosquetero</option>
+                    <option value="Paladín">Paladín</option>
+                    <option value="Sacerdotisa">Sacerdotisa</option>
+                    <option value="Samurai">Samurai</option>
+                    <option value="Valquiria">Valquiria</option>
+                </select>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <label class="form-titles" for="nombre"> <strong>Special finisher:</strong></label>
+            <input class="js-special-input" type="text" id="nombre" name="nombre" required>
+        </fieldset>
+
     </fieldset>
 
-    <fieldset class="cc">
-        <div>
-            <label class="form-titles" for="creatura">Criatura:</label>
-            <select id="raza" name="raza">
-                <option value="Draenei">Draenei</option>
-                <option value="Dragon">Dragon</option>
-                <option value="Elfo">Elfo</option>
-                <option value="Enano">Enano</option>
-                <option value="Ent">Ent</option>
-                <option value="Gnomo">Gnomo</option>
-                <option value="Hada">Hada</option>
-                <option value="Hobbit">Hobbit</option>
-                <option value="Hombre Lobo">Hombre Lobo</option>
-                <option value="Humano">Humano</option>
-                <option value="Mujer Lobo">Mujer Lobo</option>
-                <option value="No-muerto">No-muerto</option>
-                <option value="Orco">Orco</option>
-                <option value="Trol">Trol</option>
-                <option value="Trasgo">Trasgo</option>
-                <option value="Vampiro">Vampiro</option>
-                <option value="Zombie">Zombie</option>
-            </select>
-        </div>
-        <div>
-            <label for="clase">Clase:</label>
-            <select id="clase" name="clase">
-                <option value="Brujo">Brujo</option>
-                <option value="Caballero">Caballero</option>
-                <option value="Cazador">Cazador</option>
-                <option value="Clerigo">Clerigo</option>
-                <option value="Druida">Druida</option>
-                <option value="Guerrero">Guerrero</option>
-                <option value="Hechizero">Hechizero</option>
-                <option value="Juglar">Juglar</option>
-                <option value="Ladrón">Ladrón</option>
-                <option value="Mago">Mago</option>
-                <option value="Místico">Místico</option>
-                <option value="Mosquetero">Mosquetero</option>
-                <option value="Paladín">Paladín</option>
-                <option value="Sacerdotisa">Sacerdotisa</option>
-                <option value="Samurai">Samurai</option>
-                <option value="Valquiria">Valquiria</option>
-            </select>
-        </div>
+
+
     </fieldset>
-
-
-    <fieldset>
-        <label class="form-titles" for="nombre">Special finisher:</label>
-        <input type="text" id="nombre" name="nombre" required>
-    </fieldset>
-
-</fieldset>
+</section>
