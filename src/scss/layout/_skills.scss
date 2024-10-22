@@ -1,10 +1,19 @@
 
-.form-skills {
-    display: flex;
-   gap:20px
+.form-skills, .form-design, .title-design {
+  display: flex;
+   gap:20px;
+   border: none;
+  outline: none;
  }
+ 
 
  .cc{
   display: flex;
+  flex-direction: column;
   gap: 25px;
+ }
+
+ .skillsDiv{
+  display: flex;
+  flex-direction: column;
  }

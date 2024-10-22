@@ -1,11 +1,14 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'layout/form_share';
-@import 'layout/form.scss';
-@import 'layout/formpreview.scss';
-@import 'layout/form-design.scss';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/landingMain.scss';
-@import 'layout/skills.scss';
-@import 'core/index.scss';
+@import "core/variables";
+@import "core/reset";
+
+@import "layout/form-design.scss";
+@import "layout/skills.scss";
+@import "layout/form_share";
+@import "layout/formpreview.scss";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/landingMain.scss";
+@import "core/index.scss";
+
+
+@import "layout/form.scss";
