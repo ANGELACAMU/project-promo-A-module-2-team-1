@@ -24,10 +24,15 @@
       .form-L,.form-R {
           width: 50%;
           box-sizing: border-box;
+          flex:1;
         }
       .form-R {
         background-color: $colorFont; 
        }
     }
+}
+
+.body-formulario{
+  height: 100vh;
 }
 
