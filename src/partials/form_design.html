@@ -8,11 +8,11 @@
 
         <fieldset class="form-fieldset">
             <fieldset class="form-design-name">
-                <label class="form-titles " for="nombre"><strong>Nombre:</strong></label>
+                <label class="form-titles " for="nombre"><strong>Nombre</strong></label>
                 <input class="js-name" type="text" id="nombre" name="nombre" required>
             </fieldset>
             <fieldset class="form-design-background">
-                <h4>Elige una paleta de colores:</h4>
+                <h4 class="form-titles">Elige una paleta de colores</h4>
                 <div class="colors">
                     <label for="p-one">
                         <input id="p-one" type="radio" name="palette">
@@ -41,9 +41,14 @@
                 </div>
             </fieldset>
             <fieldset class="form-design-img">
-                <h4 class="title-img">Añade tu imagen</h4>
-                <input type="file" accept="image/png,image/jpeg">
+                <h4 class="title-img">Selecciona tu avatar</h4>
+                <div class="block-add-img">
+                    <label class="add-img" for="add-img">Añade una imagen</label>
+                    <input class="file" type="file" accept="image/png,image/jpeg" id="add-img">
+                    <div class="img-block"></div>
+                </div>
                 <p class="archive">*Solo admite archivos .png y .jpeg</p>
+
             </fieldset>
         </fieldset>
     </form>
