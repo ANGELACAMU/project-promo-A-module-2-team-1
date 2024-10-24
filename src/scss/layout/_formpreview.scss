@@ -1,0 +1,35 @@
+
+
+.derecha {
+    padding: 50px;
+}
+
+.js-preview {
+    display: flex;
+    margin: 0;
+}
+
+.totoro-image {
+    max-width: 50%;
+    height: auto;
+}
+
+.container-preview {
+    width: 300px;
+    height: 300px;
+    border: 4px double $colorFont2;
+    /* Reemplaza con tu color */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: $colorFont3;
+    /* Reemplaza con tu color */
+    color: $colorFont;
+    /* Reemplaza con tu color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Asegura que el contenido esté centrado verticalmente */
+    margin: 20px auto;
+    /* Centra el div horizontalmente */
+}

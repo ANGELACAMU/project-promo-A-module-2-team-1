@@ -1,0 +1,132 @@
+.form-design {
+  width: 100%;
+  color: $colorFont4;
+  font-family: $fontText1;
+}
+
+.title-design {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+  padding: 10px;
+}
+
+.form-titles {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  accent-color: $colorFont3;
+}
+
+input {
+  background-color: $colorFont3;
+  color: $colorFont;
+}
+
+.form-design-background {
+  label {
+    display: flex;
+    gap: 10px;
+  }
+}
+.colors {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 15px;
+}
+//paleta uno
+
+.paletteOne,
+.paletteTwo,
+.paletteThree {
+  display: flex;
+}
+
+.paletteOne-one {
+  background-color: rgb(107, 106, 56);
+  width: 15px;
+  height: 15px;
+}
+.paletteOne-two {
+  background-color: burlywood;
+  width: 15px;
+  height: 15px;
+}
+.paletteOne-three {
+  background-color: rgb(240, 132, 186);
+  width: 15px;
+  height: 15px;
+}
+
+//paleta dos
+
+.paletteTwo-one {
+  background-color: $colorFont3;
+  width: 15px;
+  height: 15px;
+}
+.paletteTwo-two {
+  background-color: $colorFont5;
+  width: 15px;
+  height: 15px;
+}
+.paletteTwo-three {
+  background-color: $colorFont4;
+  width: 15px;
+  height: 15px;
+}
+//paleta tres
+
+.paletteThree-one {
+  background-color: rgb(31, 31, 31);
+  width: 15px;
+  height: 15px;
+}
+.paletteThree-two {
+  background-color: $colorFont;
+  width: 15px;
+  height: 15px;
+}
+.paletteThree-three {
+  background-color: rgb(212, 147, 56);
+  width: 15px;
+  height: 15px;
+}
+.title-img {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.file {
+  display: none;
+}
+.add-img {
+  background-color: $colorFont3;
+  color: $colorFont;
+  font-size: 15px;
+  border-radius: 7px;
+  padding: 8px;
+  font-family: $fontText1;
+}
+.archive {
+  font-size: smaller;
+  margin-top: 4px;
+}
+.block-add-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-block {
+  width: 50px;
+  height: 50px;
+  border: 1px solid $colorFont3;
+}
