@@ -1,87 +1,81 @@
 .img-landing {
-    text-align: center;
+  text-align: center;
 }
 
 .cat-play {
-    width: 80%;
-    height: auto;
-    margin-top: 25px;
+  width: 80%;
+  height: auto;
+  margin-top: 25px;
 }
 
 .text-landing {
-    color: $colorFont3;
-    font-size: 20px;
-    padding-bottom: 10px;
-    font-family: $fontText2;
-    margin: 70px;
+  color: $colorFont3;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: $fontText2;
+  margin: 70px;
 }
 .button-landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .button-empezar {
-    background-color: $colorFont3;
-    font-family: $fontText1;
-    color: $colorFont;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 92px;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.3s;
-    @media (min-width:1000px){
-        width: 250px;
-        height: 50px;
-        font-size: 25px;
-    }
+  background-color: $colorFont3;
+  font-family: $fontText1;
+  color: $colorFont;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 92px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  @media (min-width: 1000px) {
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+  }
 }
 .button-empezar:hover {
-    background-color: $colorFont2;
-    transform: scale(1.05);
-    color: $colorFont4;
-    
+  background-color: $colorFont2;
+  transform: scale(1.05);
+  color: $colorFont4;
 }
 
+@media (min-width: 500px) {
+  .img-landing {
+    width: 100hv;
+  }
+  .cat-play {
+    width: 50hv;
+    margin-top: 50px;
+  }
 
-@media (min-width:500px) {
-    .img-landing {
-        width: 100hv;
-    }
-    .cat-play {
-        width: 50hv;
-        margin-top: 50px;
-    }
-
-    .body-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
+  .body-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
+@media (min-width: 1000px) {
+  .img-landing {
+    width: 100hv;
+  }
 
-@media (min-width:1000px) {
-    .img-landing {
-        width: 100hv;
-    }
+  .cat-play {
+    width: 130%;
+    margin-top: 50px;
+  }
 
-    .cat-play {
-        width: 130%;
-        margin-top: 50px;
-    }
-   
-    .body-div{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .button-landing{
-        width: 50%;;
-    }
+  .body-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-landing {
+    width: 50%;
+  }
 }
