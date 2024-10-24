@@ -14,15 +14,12 @@
 
 .container-preview {
     width: 300px;
-    height: 300px;
+    height: 373px;
     border: 4px double $colorFont2;
-    /* Reemplaza con tu color */
     padding: 10px;
     margin-top: 20px;
     background-color: $colorFont3;
-    /* Reemplaza con tu color */
     color: $colorFont;
-    /* Reemplaza con tu color */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,8 +27,18 @@
     /* Asegura que el contenido esté centrado verticalmente */
     margin: 20px auto;
     /* Centra el div horizontalmente */
+    font-family: $fontText1;
 }
 
 .button-reset {
     margin-top: 150px;
+}
+
+.btn-rst {
+    background-color: $colorFont3;
+    color: $colorFont;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 10px;
+    font-family: $fontText1;
 }
