@@ -1,4 +1,5 @@
-![Pusheen](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fes%2Fpng-wgwbs&psig=AOvVaw1aBWcCiTMVI8Z1eCUArUAL&ust=1729709682646000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLi8-erUookDFQAAAAAdAAAAABAE)
+![pusheen](https://github.com/user-attachments/assets/2727053d-9169-4e64-958f-60b74e82ef13)
+
 
 # PURR Skills
 
