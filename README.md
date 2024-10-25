@@ -9,7 +9,7 @@ Podrá visualizar en la propia página los cambios e ir modificando las caracter
 
 Sus características básicas son un diseño fácil de usar, intuitivo y flexible.
 
-Suerte en su miau-aventura. prrrr prrrr
+Suerte en su miau-ventura. prrrr prrrr
 
 
 
