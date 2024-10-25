@@ -4,7 +4,7 @@
 # PURR Skills
 
 Bienvenidx morador de miau-zmorras!
-En este proyecto de tintes pasteles, dirigido por Pusheen el dios cute de los gatos, usted puede personalizar su ficha de personaje purrrfecta con el kit mínimo para tener contento a su game miau-aster. 
+En este proyecto de tintes pasteles, dirigido por Pusheen el dios cute de los gatos, usted puede personalizar su ficha de personaje *purrr*fecta con el kit mínimo para tener contento a su game miau-aster. 
 Podrá visualizar en la propia página los cambios e ir modificando las características de la ficha a su gusto gatuno.
 
 Sus características básicas son un diseño fácil de usar, intuitivo y flexible.
