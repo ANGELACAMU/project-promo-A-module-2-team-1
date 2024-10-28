@@ -16,6 +16,9 @@ function CollFormu( ) {
 
  jsbtnadd.addEventListener("click", CollFormu);
 
+
+
+/* PARA CAMBIAR DEJO COMENTADO POR SI ACASO
  function CollFormuSkill( ) {
   Desplegaskill.classList.toggle('collapsed');
   console.log("apretar boton");
@@ -28,5 +31,5 @@ function CollFormu( ) {
   console.log("apretar boton");
 };
  jsbnsh.addEventListener("click", CollFormuSh);
- 
+ */
 
