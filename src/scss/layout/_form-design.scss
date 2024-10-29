@@ -36,12 +36,14 @@ input {
     gap: 10px;
   }
 }
+
 .colors {
   display: flex;
   flex-direction: column;
   gap: 7px;
   margin-top: 15px;
 }
+
 //paleta uno
 
 .paletteOne,
@@ -55,11 +57,13 @@ input {
   width: 15px;
   height: 15px;
 }
+
 .paletteOne-two {
   background-color: burlywood;
   width: 15px;
   height: 15px;
 }
+
 .paletteOne-three {
   background-color: rgb(240, 132, 186);
   width: 15px;
@@ -73,16 +77,19 @@ input {
   width: 15px;
   height: 15px;
 }
+
 .paletteTwo-two {
   background-color: $colorFont5;
   width: 15px;
   height: 15px;
 }
+
 .paletteTwo-three {
   background-color: $colorFont4;
   width: 15px;
   height: 15px;
 }
+
 //paleta tres
 
 .paletteThree-one {
@@ -90,16 +97,19 @@ input {
   width: 15px;
   height: 15px;
 }
+
 .paletteThree-two {
   background-color: $colorFont;
   width: 15px;
   height: 15px;
 }
+
 .paletteThree-three {
   background-color: rgb(212, 147, 56);
   width: 15px;
   height: 15px;
 }
+
 .title-img {
   margin-bottom: 12px;
   font-size: 20px;
@@ -108,6 +118,7 @@ input {
 .file {
   display: none;
 }
+
 .add-img {
   background-color: $colorFont3;
   color: $colorFont;
@@ -116,15 +127,18 @@ input {
   padding: 8px;
   font-family: $fontText1;
 }
+
 .archive {
   font-size: smaller;
   margin-top: 4px;
 }
+
 .block-add-img {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .img-block {
   width: 50px;
   height: 50px;
@@ -145,3 +159,7 @@ input {
   border: 1px solid #ccc;
 }
 
+.js-btn-rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
