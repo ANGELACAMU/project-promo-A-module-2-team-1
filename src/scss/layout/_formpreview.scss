@@ -1,43 +1,77 @@
 .derecha {
-    padding: 50px;
+  padding: 50px;
 }
 
 .js-preview {
-    display: flex;
-    margin: 0;
+  display: flex;
+  margin: 0;
 }
 
 .totoro-image {
-    max-width: 50%;
-    height: auto;
+  max-width: 50%;
+  height: auto;
 }
 
 .container-preview {
-    width: 300px;
-    height: 373px;
-    border: 4px double $colorFont2;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: $colorFont3;
-    color: $colorFont;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* Asegura que el contenido esté centrado verticalmente */
-    margin: 20px auto;
-    /* Centra el div horizontalmente */
-    font-family: $fontText1;
+  width: 300px;
+  height: 373px;
+  border: 4px double $colorFont2;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: $colorFont3;
+  color: $colorFont;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Asegura que el contenido esté centrado verticalmente */
+  margin: 20px auto;
+  /* Centra el div horizontalmente */
+  font-family: $fontText1;
 }
 
 .button-reset {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
-
-.defoultimage{
-
-    background-image: url("./public/images/Gojo.jpeg");
-
+.defoultimage {
+  background-image: url("./public/images/Gojo.jpeg");
 }
 
+//Paletas para el js
+
+.palette-preview-one {
+  background-color: burlywood;
+
+  .title {
+    color: rgb(107, 106, 56);
+  }
+
+  .data {
+    color: rgb(240, 132, 186);
+  }
+}
+
+.palette-preview-two {
+  background-color: $colorFont5;
+
+  .title {
+    color: $colorFont3;
+  }
+
+  .data {
+    color: $colorFont4;
+  }
+}
+
+.palette-preview-three {
+  background-color: $colorFont;
+
+  .title {
+    color: rgb(31, 31, 31);
+  }
+
+  .data {
+    color: rgb(212, 147, 56);
+  }
+}
