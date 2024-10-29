@@ -39,4 +39,6 @@ function CollFormuSh() {
 };
 jsbnsh.addEventListener("click", CollFormuSh);
 
+let lastScrollTop = 0;
+const btnAdd = document.querySelector('.js-btn-add');
 
