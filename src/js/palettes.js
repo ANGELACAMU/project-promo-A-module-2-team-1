@@ -1,10 +1,4 @@
 "use strict";
-/*
-- Seleccionar los elementos en el html
-- Recoger el contenido de las tarjetas
-- cuando se haga click en el boton de una paleta,
-salga reflejado en la tarjeta.
-*/
 
 const paletteOnePreview = document.querySelector(".palette-preview-one");
 const paletteTwoPreview = document.querySelector(".palette-preview-two");
