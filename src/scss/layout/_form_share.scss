@@ -5,17 +5,15 @@
     font-weight: 700;
     padding: 10px;
     margin-left: 10px;
+    
 
 }
 
 .fieldset-card {
     font-family: $fontText1;
     border: 1px solid $colorFont4;
-    /* Cambia el color del borde */
     border-radius: 10px;
-    /* Bordes redondeados */
     padding: 20px;
-    /* Espaciado interno */
     border: none;
 
 }
@@ -29,16 +27,25 @@
 
     &_button {
         font-family: $fontText1;
-        font-size: 12px;
+        padding: 15px;
+        font-size: 15px;
         border: none;
         border-radius: 7px;
         background-color: $colorFont3;
         color: $colorFont;
         transition-duration: 2s;
-        padding: 8px;
+        
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-left: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @media (min-width:768px){
+            padding: 20px;
+            font-size: 20px;
+        }
 
         &:hover {
             color: $colorFont4;
@@ -72,6 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 15px;
 
     &:hover {
         color: $colorFont4;
