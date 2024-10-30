@@ -57,14 +57,14 @@
 //Paletas para el js
 
 .palette-preview-one {
-  background-color: #225b69;
+  background-color: $olive-green;
 
   .title {
-    color: #e2dbe8;
+    color: $pale-pink;
   }
 
   .card-design {
-    color: #c358d4;
+    color: $magenta;
   }
 }
 
@@ -81,13 +81,13 @@
 }
 
 .palette-preview-three {
-  background-color: #fdeef5;
+  background-color: $pale-pink;
 
   .title {
-    color: #cc899e;
+    color: $pink;
   }
 
   .card-design {
-    color: #5f3844;
+    color: $maroon;
   }
 }
