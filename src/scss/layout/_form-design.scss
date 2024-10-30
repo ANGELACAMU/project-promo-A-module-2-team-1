@@ -53,19 +53,19 @@ input {
 }
 
 .paletteOne-one {
-  background-color: #225b69;
+  background-color: $olive-green;
   width: 15px;
   height: 15px;
 }
 
 .paletteOne-two {
-  background-color: #e2dbe8;
+  background-color: $pale-pink;
   width: 15px;
   height: 15px;
 }
 
 .paletteOne-three {
-  background-color: #c358d4;
+  background-color: $magenta;
   width: 15px;
   height: 15px;
 }
@@ -93,19 +93,19 @@ input {
 //paleta tres
 
 .paletteThree-one {
-  background-color: #fdeef5;
+  background-color: $pale-pink;
   width: 15px;
   height: 15px;
 }
 
 .paletteThree-two {
-  background-color: #cc899e;
+  background-color: $pink;
   width: 15px;
   height: 15px;
 }
 
 .paletteThree-three {
-  background-color: #5f3844;
+  background-color: $maroon;
   width: 15px;
   height: 15px;
 }
