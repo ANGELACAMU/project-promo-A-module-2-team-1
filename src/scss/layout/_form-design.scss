@@ -53,19 +53,19 @@ input {
 }
 
 .paletteOne-one {
-  background-color: rgb(107, 106, 56);
+  background-color: #225b69;
   width: 15px;
   height: 15px;
 }
 
 .paletteOne-two {
-  background-color: burlywood;
+  background-color: #e2dbe8;
   width: 15px;
   height: 15px;
 }
 
 .paletteOne-three {
-  background-color: rgb(240, 132, 186);
+  background-color: #c358d4;
   width: 15px;
   height: 15px;
 }
@@ -157,8 +157,6 @@ input {
   background-size: cover;
   border: 1px solid #ccc;
 }
-
-
 
 .js-btn-rotate {
   transform: rotate(180deg);
