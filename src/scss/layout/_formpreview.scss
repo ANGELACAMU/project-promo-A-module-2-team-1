@@ -60,14 +60,14 @@
 //Paletas para el js
 
 .palette-preview-one {
-  background-color: burlywood;
+  background-color: #90b4cb;
 
   .title {
-    color: rgb(107, 106, 56);
+    color: #470279;
   }
 
   .data {
-    color: rgb(240, 132, 186);
+    color: #d52fee;
   }
 }
 
@@ -75,22 +75,22 @@
   background-color: $colorFont5;
 
   .title {
-    color: $colorFont3;
+    color: $colorFont4;
   }
 
   .data {
-    color: $colorFont4;
+    color: $colorFont3;
   }
 }
 
 .palette-preview-three {
-  background-color: $colorFont;
+  background-color: #fdeef5;
 
   .title {
-    color: rgb(31, 31, 31);
+    color:  #cc899e;
   }
 
   .data {
-    color: rgb(212, 147, 56);
+    color:  #5f3844;
   }
 }

@@ -73,19 +73,19 @@ input {
 //paleta dos
 
 .paletteTwo-one {
-  background-color: $colorFont3;
-  width: 15px;
-  height: 15px;
-}
-
-.paletteTwo-two {
   background-color: $colorFont5;
   width: 15px;
   height: 15px;
 }
 
-.paletteTwo-three {
+.paletteTwo-two {
   background-color: $colorFont4;
+  width: 15px;
+  height: 15px;
+}
+
+.paletteTwo-three {
+  background-color: $colorFont3;
   width: 15px;
   height: 15px;
 }
@@ -93,19 +93,19 @@ input {
 //paleta tres
 
 .paletteThree-one {
-  background-color: rgb(31, 31, 31);
+  background-color: #fdeef5;
   width: 15px;
   height: 15px;
 }
 
 .paletteThree-two {
-  background-color: $colorFont;
+  background-color: #cc899e;
   width: 15px;
   height: 15px;
 }
 
 .paletteThree-three {
-  background-color: rgb(212, 147, 56);
+  background-color: #5f3844;
   width: 15px;
   height: 15px;
 }
@@ -149,7 +149,6 @@ input {
   border: 1px solid #ccc;
 }
 
-
 .profile__image {
   width: 300px;
   height: 300px;
@@ -158,6 +157,8 @@ input {
   background-size: cover;
   border: 1px solid #ccc;
 }
+
+
 
 .js-btn-rotate {
   transform: rotate(180deg);

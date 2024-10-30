@@ -9,6 +9,7 @@ const Desplegash = document.querySelector(".js-collapsed-sh");
 const jsbnsh = document.querySelector(".js-btn-add-sh");
 
 
+
 jsbtnadd.classList.toggle('js-btn-rotate');
 
 function CollFormu() {
@@ -39,4 +40,6 @@ function CollFormuSh() {
 };
 jsbnsh.addEventListener("click", CollFormuSh);
 
+let lastScrollTop = 0;
+const btnAdd = document.querySelector('.js-btn-add');
 

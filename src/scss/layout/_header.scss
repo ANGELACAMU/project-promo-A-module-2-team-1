@@ -1,28 +1,26 @@
 .header {
-    background-color: $colorFont5;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    padding-left: 22px;
-    position: sticky;
-    top: 0;
+  background-color: $colorFont5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding-left: 22px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
 }
 
 .logo-cabecera {
-    width: 85px;
-    margin-right: 10px
+  width: 85px;
+  margin-right: 10px;
 }
 
 .texto-cabecera {
-    font-size: 45px;
-    
-    padding-left: 30px;
-    color: $colorFont;
-    font-family: $fontText1;
-    font-weight: 700;
-    
-   
-    
+  font-size: 45px;
+
+  padding-left: 30px;
+  color: $colorFont;
+  font-family: $fontText1;
+  font-weight: 700;
 }
