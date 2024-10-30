@@ -9,6 +9,7 @@ const Desplegash = document.querySelector(".js-collapsed-sh");
 const jsbnsh = document.querySelector(".js-btn-add-sh");
 
 
+
 jsbtnadd.classList.toggle('js-btn-rotate');
 
 function CollFormu() {
