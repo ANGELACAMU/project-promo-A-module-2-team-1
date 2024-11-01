@@ -15,11 +15,9 @@
 .container-preview {
   width: 300px;
   height: 373px;
-  border: 4px double $colorFont2;
+  border: 4px double;
   padding: 10px;
   margin-top: 20px;
-  background-color: $colorFont3;
-  color: $colorFont;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,9 +44,7 @@
 }
 
 .criatura{
-    
-    font-weight: bold
-    
+  font-weight: bold 
     
 }
 
