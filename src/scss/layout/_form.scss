@@ -4,12 +4,11 @@
   display: flex;
   justify-content: center;
   background-color: $colorFont2;
- min-height: 100vh
+min-height: 100vh;
 }
 
-
 .form-general {
-  flex: 1;
+  width: 100%;
   background-color: $colorFont;
   @media (min-width: 768px) and (min-width: 1024px) {
     width: 70vw;
@@ -24,7 +23,4 @@
   }
 }
 
-.body-formulario {
-  height: 100vh;
-}
 

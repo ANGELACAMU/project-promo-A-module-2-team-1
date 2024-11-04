@@ -7,17 +7,14 @@
   margin: 0;
 }
 
-.totoro-image {
-  max-width: 50%;
-  height: auto;
-}
+
 
 .container-preview {
   width: 300px;
   height: 373px;
-  border: 4px double;
+  //border: 4px double ;
   padding: 10px;
-  margin-top: 20px;
+ //margin-top: 20px;
   background-color: $colorFont3;
   // color: $colorFont;
   display: flex;
@@ -30,11 +27,13 @@
   font-family: $fontText1;
 }
 
+
 .button-reset {
-  margin-top: 150px;
+  margin-top: 30px;
 }
 
 .defoultimage {
+  width: 250px;
   background-image: url("./public/images/Gojo.jpeg");
 }
 

@@ -162,3 +162,16 @@ input {
   transform: rotate(180deg);
   transition: transform 0.3s;
 }
+
+
+.iconoform{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 15px;
+}
+
+.iconoform2{
+  color: $colorFont3;
+  width: 30px;
+}
