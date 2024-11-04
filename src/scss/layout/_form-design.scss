@@ -53,19 +53,19 @@ input {
 }
 
 .paletteOne-one {
-  background-color: rgb(107, 106, 56);
+  background-color: $olive-green;
   width: 15px;
   height: 15px;
 }
 
 .paletteOne-two {
-  background-color: burlywood;
+  background-color: $pale-pink;
   width: 15px;
   height: 15px;
 }
 
 .paletteOne-three {
-  background-color: rgb(240, 132, 186);
+  background-color: $magenta;
   width: 15px;
   height: 15px;
 }
@@ -93,19 +93,19 @@ input {
 //paleta tres
 
 .paletteThree-one {
-  background-color: #fdeef5;
+  background-color: $pale-pink;
   width: 15px;
   height: 15px;
 }
 
 .paletteThree-two {
-  background-color: #cc899e;
+  background-color: $pink;
   width: 15px;
   height: 15px;
 }
 
 .paletteThree-three {
-  background-color: #5f3844;
+  background-color: $maroon;
   width: 15px;
   height: 15px;
 }
@@ -157,8 +157,6 @@ input {
   background-size: cover;
   border: 1px solid #ccc;
 }
-
-
 
 .js-btn-rotate {
   transform: rotate(180deg);

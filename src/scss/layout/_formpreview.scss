@@ -18,6 +18,8 @@
   border: 4px double;
   padding: 10px;
   margin-top: 20px;
+  background-color: $colorFont3;
+  // color: $colorFont;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,11 +38,11 @@
   background-image: url("./public/images/Gojo.jpeg");
 }
 
-.card-design{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    font-size: 20px;
+.card-design {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  font-size: 20px;
 }
 
 .criatura{
@@ -48,22 +50,22 @@
     
 }
 
-.tunombre{
-    font-size: 30px;
-    font-weight: bold;
-    font-family: $fontText2;
+.tunombre {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: $fontText2;
 }
 //Paletas para el js
 
 .palette-preview-one {
-  background-color: #90b4cb;
+  background-color: $olive-green;
 
   .title {
-    color: #470279;
+    color: $pale-pink;
   }
 
-  .data {
-    color: #d52fee;
+  .card-design {
+    color: $magenta;
   }
 }
 
@@ -74,19 +76,19 @@
     color: $colorFont4;
   }
 
-  .data {
+  .card-design {
     color: $colorFont3;
   }
 }
 
 .palette-preview-three {
-  background-color: #fdeef5;
+  background-color: $pale-pink;
 
   .title {
-    color:  #cc899e;
+    color: $pink;
   }
 
-  .data {
-    color:  #5f3844;
+  .card-design {
+    color: $maroon;
   }
 }
