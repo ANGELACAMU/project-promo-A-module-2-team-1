@@ -19,6 +19,24 @@ nameUser.addEventListener("input", (event) => {
   console.log(dataForm);
 });
 
+//PALETAS DE COLORES
+
+const palette1 = document.querySelector(".js-p-one");
+const palette2 = document.querySelector(".js-p-two");
+const palette3 = document.querySelector(".js-p-three");
+
+const handlePalette = (event) => {
+    dataForm.field5 = event.target.value;
+    console.log(dataForm);
+  };
+  
+  palette1.addEventListener("input", handlePalette);
+  palette2.addEventListener("input", handlePalette);
+  palette3.addEventListener("input", handlePalette);
+
+
+
+
 //MANA
 const inputSpecial = document.querySelector(".js-special-input");
 const title2 = document.querySelector(".js-special");
@@ -61,8 +79,6 @@ const listClass = document.querySelector(".js-list-class");
 
 listClass.addEventListener("input", (event) => {
   title5.innerHTML = event.target.value;
-  dataForm.field5 = event.target.value;
-  console.log(dataForm);
 });
 
 //AVATAR
