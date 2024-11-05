@@ -1,22 +1,23 @@
 "use strict";
 
 const dataForm = {
-  field1: 0,
-  field2: "",
-  field3: "",
-  field4: "",
-  field5: "",
-  photo: "",
+    field1: 0,
+    field2: "",
+    field3: "",
+    field4: "",
+    field5: "",
+    photo: "",
 };
 
 //NOMBRE
 const nameUser = document.querySelector(".js-name");
 const title = document.querySelector(".js-preview");
 
+
 nameUser.addEventListener("input", (event) => {
-  title.innerHTML = event.target.value;
-  dataForm.field2 = event.target.value;
-  console.log(dataForm);
+    title.innerHTML = event.target.value;
+    dataForm.field2 = event.target.value;
+    console.log(dataForm);
 });
 
 //PALETAS DE COLORES
@@ -39,9 +40,9 @@ const inputSpecial = document.querySelector(".js-special-input");
 const title2 = document.querySelector(".js-special");
 
 inputSpecial.addEventListener("input", (event) => {
-  title2.innerHTML = event.target.value;
-  dataForm.field1 = event.target.value;
-  console.log(dataForm);
+    title2.innerHTML = event.target.value;
+    dataForm.field1 = event.target.value;
+    console.log(dataForm);
 });
 //ROL
 const tank = document.querySelector(".js-tank");
@@ -50,9 +51,9 @@ const dps = document.querySelector(".js-dps");
 const title3 = document.querySelector(".js-skill");
 
 const handleRoleClick = (event) => {
-  title3.innerHTML = event.target.value;
-  dataForm.field3 = event.target.value;
-  console.log(dataForm);
+    title3.innerHTML = event.target.value;
+    dataForm.field3 = event.target.value;
+    console.log(dataForm);
 };
 
 tank.addEventListener("input", handleRoleClick);
@@ -65,9 +66,9 @@ const title4 = document.querySelector(".js-creature");
 const creature = document.querySelector(".js-list-creature");
 
 creature.addEventListener("input", (event) => {
-  title4.innerHTML = event.target.value;
-  dataForm.field4 = event.target.value;
-  console.log(dataForm);
+    title4.innerHTML = event.target.value;
+    dataForm.field4 = event.target.value;
+    console.log(dataForm);
 });
 
 //CLASES
@@ -75,7 +76,7 @@ const title5 = document.querySelector(".js-class");
 const listClass = document.querySelector(".js-list-class");
 
 listClass.addEventListener("input", (event) => {
-  title5.innerHTML = event.target.value;
+    title5.innerHTML = event.target.value;
 });
 
 //AVATAR
@@ -93,9 +94,9 @@ const profilePreview = document.querySelector(".js__profile-preview");
  * @param {evento} e
  */
 function getImage(e) {
-  const myFile = e.currentTarget.files[0];
-  fr.addEventListener("load", writeImage);
-  fr.readAsDataURL(myFile);
+    const myFile = e.currentTarget.files[0];
+    fr.addEventListener("load", writeImage);
+    fr.readAsDataURL(myFile);
 }
 
 /**
@@ -103,15 +104,15 @@ function getImage(e) {
  * trabajar con ellos ;)
  */
 function writeImage() {
-  /* En la propiedad `result` de nuestro FR se almacena
-   * el resultado. Ese resultado de procesar el fichero que hemos cargado
-   * podemos pasarlo como background a la imagen de perfil y a la vista previa
-   * de nuestro componente.
-   */
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
-  dataForm.photo = fr.result;
-  console.log(dataForm);
+    /* En la propiedad `result` de nuestro FR se almacena
+     * el resultado. Ese resultado de procesar el fichero que hemos cargado
+     * podemos pasarlo como background a la imagen de perfil y a la vista previa
+     * de nuestro componente.
+     */
+    profileImage.style.backgroundImage = `url(${fr.result})`;
+    profilePreview.style.backgroundImage = `url(${fr.result})`;
+    dataForm.photo = fr.result;
+    console.log(dataForm);
 }
 
 /**
