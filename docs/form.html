@@ -12,22 +12,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
-<<<<<<< HEAD
-
-
   <script type="module" crossorigin src="./form.js"></script>
   <link rel="modulepreload" crossorigin href="./js/main.js">
-  <link rel="stylesheet" href="./assets/main-0f8064a5.css">
+  <link rel="stylesheet" href="./assets/main-0ed79a31.css">
 </head>
 
-
-=======
-  <script type="module" crossorigin src="./form.js"></script>
-  <link rel="modulepreload" crossorigin href="./js/main.js">
-  <link rel="stylesheet" href="./assets/main-ba700f32.css">
-</head>
-
->>>>>>> 4ae2e6156f4f2f3918ce74e90e0e7d22261c43f6
 <body class="body-formulario">
     <header class="header">
 
@@ -45,12 +34,16 @@
 
 
 
-    <div class="page-form">
-        <div class="form-general">
-            <div class="form-L">
-                <div class="title-design form-design">
-    <h2>Diseña</h2>
-    <span class="fa-solid fa-chevron-down js-btn-add"></span>
+    <main>
+        <div class="page-form">
+            <div class="form-general">
+                <div class="form-L">
+                    <div class="title-design form-design js-container ">
+    <div class="iconoform">
+        <i class="fa-solid fa-hat-wizard iconoform2"></i>
+        <h2>Diseña</h2>
+    </div>
+    <span class="fa-solid fa-chevron-down js-btn-add "></span>
 </div>
 <section class="js-collapsed">
     <form class="form-design" action="" method="POST">
@@ -65,7 +58,7 @@
                 <h4 class="form-titles">Elige una paleta de colores</h4>
                 <div class="colors">
                     <label for="p-one">
-                        <input id="p-one" type="radio" name="palette">
+                        <input id="p-one" class="p-one js-p-one" type="radio" name="palette">
                         <div class="paletteOne">
                             <div class="paletteOne-one"></div>
                             <div class="paletteOne-two"></div>
@@ -73,7 +66,7 @@
                         </div>
                     </label>
                     <label for="p-two">
-                        <input id="p-two" type="radio" name="palette">
+                        <input id="p-two" class="p-two js-p-two" type="radio" name="palette">
                         <div class="paletteTwo">
                             <div class="paletteTwo-one"></div>
                             <div class="paletteTwo-two"></div>
@@ -81,7 +74,7 @@
                         </div>
                     </label>
                     <label for="p-three">
-                        <input id="p-three" type="radio" name="palette">
+                        <input id="p-three" class="p-three js-p-three" type="radio" name="palette">
                         <div class="paletteThree">
                             <div class="paletteThree-one"></div>
                             <div class="paletteThree-two"></div>
@@ -93,9 +86,9 @@
             <fieldset class="form-design-img">
                 <h4 class="title-img">Selecciona tu avatar</h4>
                 <div class="block-add-img">
-                    <label class="add-img js__profile-upload-btn" for="add-img">Añade una imagen</label>
-                    <input class="file" type="file" accept="image/png,image/jpeg" id="add-img">
-                    <div class="img-block js__profile-image"></div>
+                    <label class="add-img " for="add-img">Añade una imagen</label>
+                    <input class="file js__profile-upload-btn" type="file" accept="image/png,image/jpeg" id="add-img">
+                    <span class="img-block js__profile-preview"></span>
                 </div>
                 <p class="archive">*Solo admite archivos .png y .jpeg</p>
 
@@ -103,10 +96,13 @@
         </fieldset>
     </form>
 </section>
-                <hr>
-                <div class="title-design form-design">
-    <h2>Skills</h2>
-    <span class="fa-solid fa-chevron-down js-btn-add-skill"></span>
+                    <hr>
+                    <div class="title-design form-design js-container">
+    <div class="iconoform">
+        <i class="fa-solid fa-dice-d20 iconoform2"></i>
+        <h2>Skills</h2>
+    </div>
+    <span class="fa-solid fa-chevron-down js-btn-add-skill  "></span>
 </div>
 <section class="js-collapsed-skill">
     <fieldset class="form-design skillsDiv " action="" method="POST">
@@ -132,7 +128,7 @@
         <fieldset class="cc">
             <div>
                 <label class="form-titles" for="creatura"><strong>Criatura:</strong></label>
-                <select class="js-list-creature" id="raza" name="raza">
+                <select class="js-list-creature custom-select" id="raza" name="raza">
                     <option value="" disabled selected>Selecciona una criatura</option>
                     <option value="Draenei">Draenei</option>
                     <option value="Dragon">Dragon</option>
@@ -155,7 +151,7 @@
             </div>
             <div>
                 <label class="form-titles" for="creatura"><strong>Clase:</strong></label>
-                <select class="js-list-class" id="clase" name="clase">
+                <select class="js-list-class custom-select" id="clase" name="clase">
                     <option value="" disabled selected>Selecciona una clase</option>
                     <option value="Brujo">Brujo</option>
                     <option value="Caballero">Caballero</option>
@@ -179,14 +175,9 @@
 
 
         <fieldset>
-<<<<<<< HEAD
             <label class="form-titles" for="numero"> <strong>Mana:</strong></label>
             <input class="js-special-input" type="number" id="numero" name="nombre" required>
 
-=======
-            <label class="form-titles" for="nombre"> <strong>Special finisher:</strong></label>
-            <input class="js-special-input" type="text" id="nombre" name="nombre" required>
->>>>>>> 4ae2e6156f4f2f3918ce74e90e0e7d22261c43f6
         </fieldset>
 
     </fieldset>
@@ -195,76 +186,83 @@
 
     </fieldset>
 </section>
-                <hr>
-                <div class="title-design form-design">
-    <h2>Comparte IRL</h2>
-    <span class="fa-solid fa-chevron-down js-btn-add-sh"></span>
+                    <hr>
+                    <div class="title-design form-design js-container ">
+    <div class="iconoform">
+        <i class="fa-solid fa-dungeon iconoform2"></i>
+        <h2>Comparte IRL</h2>
+    </div>
+    <span class="fa-solid fa-chevron-down js-btn-add-sh "></span>
 </div>
 <section class="js-collapsed-sh">
     <fieldset class="fieldset-card ">
         <div class="card">
             <div>
-                <button class="card_button">
+                <button class="card_button js-button-card">
                     <img class="card_button_icon1" src="./images/id-card-regular.svg" alt="icon card">
                     CREAR TARJETA
                 </button>
             </div>
-
             <div class="div-provisional">
-                <p>La tarjeta ha sido creada:</p>
-                <p> Enlace que aparece https </p>
+                <p class="js-card-created"></p>
+                <p></p>
             </div>
 
-            <div>
-
-                <a href="https://adalab.es/">
-                    <button class="button_twitter">
+            <div class="js-share-x collapsed">
+                <a
+                    href="https://twitter.com/intent/tweet?text=My%20character%20sheet%20by%20PURR~SKILLS%20 ฅ•ω•ฅ &hashtags=purrskills,rol,fichapersonaje,sheet,fy😻">
+                    <button class="button_twitter twitter-share-button">
                         Compartir en
                         <img class="button_twitter_icon2" src="./images/square-x-twitter-brands-solid.svg"
                             alt="twitter icon">
                     </button>
                 </a>
 
+
             </div>
 
         </div>
     </fieldset>
 
-    </fieldset>
+
 </section>
-                <hr>
-            </div>
-            <div class="form-R">
-                <div class="derecha">
+                    <hr>
+                </div>
+                <div class="form-R">
+                    <div class="derecha">
         <div class="button-reset">
-<<<<<<< HEAD
-                <button type="submit"><a href="form.html">Respawn</button></a>
-=======
-                <button class="btn-rst" type="submit"><a href="form.html">Reset</button></a>
->>>>>>> 4ae2e6156f4f2f3918ce74e90e0e7d22261c43f6
+
+                <button type="submit" class="respa"><a href="form.html">
+                                <i class="fa-solid fa-rotate"></i>
+                                Respawn</a></button>
         </div>
         <div class="container-preview">
-                <p class="title js-preview"> Aquí va tu Nombre</p>
-                <img class="totoro-image js__profile-preview" src="./images/Gojo.jpeg" alt="foto por defecto">
-<<<<<<< HEAD
-                <p class="js-skill">Aquí va tu Rol</p>
-                <p class="js-creature">Aquí va tu Criatura</p>
-                <p class="js-class">Aquí va tu clase</p>
-                <p class="js-special">Mana inicial</p>
-=======
-                <p class="js-skill">Aquí va tu Rol</p><br>
-                <p class="js-creature">Aquí va tu Criatura</p><br>
-                <p class="js-class">Aquí va tu clase</p><br>
-                <p class="js-special">Aquí va tu special finisher</p><br>
->>>>>>> 4ae2e6156f4f2f3918ce74e90e0e7d22261c43f6
+                <p class="title js-preview tunombre"> Nombre</p>
 
+                <div class="profile__image js__profile-image defoultimage">
+                </div>
+                <div class="card-design">
+                        <div>
+                                <p class="js-creature criatura">Criatura</p>
+                                <p class="js-skill rol">Rol</p>
 
+                        </div>
+                        <div>
+                                <p class="js-class clase">Clase</p>
+                                <p class="js-special mana">Mana</p>
+                        </div>
+                </div>
         </div>
+
 
 </div>
+
+</div>
+
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     <footer class="footer">
     <section class="rrss icons">
 
@@ -303,10 +301,8 @@
 
     
     
-<<<<<<< HEAD
-=======
     
->>>>>>> 4ae2e6156f4f2f3918ce74e90e0e7d22261c43f6
+    
 </body>
 
 

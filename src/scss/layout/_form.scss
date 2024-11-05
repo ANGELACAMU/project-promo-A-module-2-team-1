@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   background-color: $colorFont2;
- 
+min-height: 100vh;
 }
 
 .form-general {
@@ -23,6 +23,4 @@
   }
 }
 
-.body-formulario {
-  height: 100vh;
-}
+

@@ -1,19 +1,36 @@
-
-.form-skills, .form-design, .title-design {
+.form-skills,
+.form-design,
+.title-design {
   display: flex;
-   gap:20px;
-   border: none;
+  gap: 20px;
+  border: none;
   outline: none;
- }
- 
+}
 
- .cc{
+
+.cc {
   display: flex;
   flex-direction: column;
   gap: 25px;
- }
+}
 
- .skillsDiv{
+.skillsDiv {
   display: flex;
   flex-direction: column;
- }
+}
+
+.js-btn-rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.custom-select {
+  font-family: $fontText1;
+  background-color: $colorFont3;
+  color: $colorFont;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 24px;
+}

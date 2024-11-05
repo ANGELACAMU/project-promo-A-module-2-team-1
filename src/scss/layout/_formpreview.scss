@@ -1,44 +1,111 @@
 .derecha {
-    padding: 50px;
+  padding: 50px;
 }
 
 .js-preview {
-    display: flex;
-    margin: 0;
-}
-
-.totoro-image {
-    max-width: 50%;
-    height: auto;
+  display: flex;
+  margin: 0;
 }
 
 .container-preview {
-    width: 300px;
-    height: 373px;
-    border: 4px double $colorFont2;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: $colorFont3;
-    color: $colorFont;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* Asegura que el contenido esté centrado verticalmente */
-    margin: 20px auto;
-    /* Centra el div horizontalmente */
-    font-family: $fontText1;
+  width: 300px;
+  height: 373px;
+  //border: 4px double ;
+  padding: 10px;
+  //margin-top: 20px;
+  background-color: $colorFont3;
+  // color: $colorFont;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Asegura que el contenido esté centrado verticalmente */
+  margin: 20px auto;
+  /* Centra el div horizontalmente */
+  font-family: $fontText1;
 }
 
 .button-reset {
-    margin-top: 125px;
+  margin-top: 30px;
+  width: 100px;
+    
+  
+  
+}
+.respa{
+  background-color: $colorFont;
+ width:100px;
+ height: 35px;
+ font-size: 17px;
+  border: none;
+  border-radius: 6px;
+  border: 2px solid $colorFont2;
+  cursor: pointer;
+  transition:  0.3s ease;
+  a:hover {
+
+   color: $colorFont2;
+    text-decoration: none;
+  }
 }
 
-.btn-rst {
-    background-color: $colorFont3;
-    color: $colorFont;
-    border-radius: 25px;
-    margin: 20px;
-    padding: 10px;
-    font-family: $fontText1;
+.defoultimage {
+  width: 250px;
+  background-image: url("../images/pusheen-sirena.gif");
+}
+
+.card-design {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  font-size: 20px;
+ 
+}
+
+.criatura {
+  font-weight: bold;
+}
+
+.tunombre {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: $fontText2;
+  color: $colorFont5;
+}
+//Paletas para el js
+
+.palette-preview-one {
+  background-color: $olive-green;
+
+  .title {
+    color: $pale-pink;
+  }
+
+  .card-design {
+    color: $magenta;
+  }
+}
+
+.palette-preview-two {
+  background-color: $colorFont5;
+
+  .title {
+    color: $colorFont4;
+  }
+
+  .card-design {
+    color: $colorFont3;
+  }
+}
+
+.palette-preview-three {
+  background-color: $pale-pink;
+
+  .title {
+    color: $pink;
+  }
+
+  .card-design {
+    color: $maroon;
+  }
 }

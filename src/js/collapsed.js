@@ -1,35 +1,37 @@
-"user strict";
-
+"use strict";
 
 const jsbtnadd = document.querySelector(".js-btn-add");
-const jsbnsk= document.querySelector(".js-btn-add-skill")
-const Desplega =document.querySelector(".js-collapsed");
-const Desplegaskill =document.querySelector(".js-collapsed-skill");
-const Desplegash =document.querySelector(".js-collapsed-sh");
-const jsbnsh= document.querySelector(".js-btn-add-sh")
+const jsbnsk = document.querySelector(".js-btn-add-skill");
+const Desplega = document.querySelector(".js-collapsed");
+const Desplegaskill = document.querySelector(".js-collapsed-skill");
+const Desplegash = document.querySelector(".js-collapsed-sh");
+const jsbnsh = document.querySelector(".js-btn-add-sh");
 
+jsbtnadd.classList.toggle("js-btn-rotate");
 
-function CollFormu( ) {
-  Desplega.classList.toggle('collapsed');
-  console.log("apretar boton");
-};
+function CollFormu() {
+  Desplega.classList.toggle("collapsed");
+  jsbtnadd.classList.toggle("js-btn-rotate");
+}
 
- jsbtnadd.addEventListener("click", CollFormu);
+jsbtnadd.addEventListener("click", CollFormu);
 
+Desplegaskill.classList.add("collapsed");
 
+function CollFormuSkill() {
+  Desplegaskill.classList.toggle("collapsed");
+  jsbnsk.classList.toggle("js-btn-rotate");
+}
 
-/* PARA CAMBIAR DEJO COMENTADO POR SI ACASO
- function CollFormuSkill( ) {
-  Desplegaskill.classList.toggle('collapsed');
-  console.log("apretar boton");
-};
- jsbnsk.addEventListener("click", CollFormuSkill);
- 
+jsbnsk.addEventListener("click", CollFormuSkill);
 
- function CollFormuSh( ) {
-  Desplegash.classList.toggle('collapsed');
-  console.log("apretar boton");
-};
- jsbnsh.addEventListener("click", CollFormuSh);
- */
+Desplegash.classList.add("collapsed");
+function CollFormuSh() {
+  Desplegash.classList.toggle("collapsed");
+  jsbnsh.classList.toggle("js-btn-rotate");
+}
 
+jsbnsh.addEventListener("click", CollFormuSh);
+
+let lastScrollTop = 0;
+const btnAdd = document.querySelector(".js-btn-add");
