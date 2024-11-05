@@ -7,6 +7,9 @@ const Desplega = document.querySelector(".js-collapsed");
 const Desplegaskill = document.querySelector(".js-collapsed-skill");
 const Desplegash = document.querySelector(".js-collapsed-sh");
 const jsbnsh = document.querySelector(".js-btn-add-sh");
+const titleDesign = document.querySelector(".js-container");
+const titleSkills = document.querySelector(".js-title-skills");
+const titleShare = document.querySelector(".js-title-sh");
 
 
 
@@ -23,7 +26,7 @@ function CollFormu() {
 
 
 jsbtnadd.addEventListener("click", CollFormu);
-
+titleDesign.addEventListener("click", CollFormu);
 
 Desplegaskill.classList.add('collapsed');
 
@@ -34,8 +37,8 @@ function CollFormuSkill() {
 
 };
 
-
 jsbnsk.addEventListener("click", CollFormuSkill);
+titleSkills.addEventListener("click", CollFormuSkill);
 
 Desplegash.classList.add('collapsed');
 function CollFormuSh() {
@@ -43,8 +46,12 @@ function CollFormuSh() {
   jsbnsh.classList.toggle('js-btn-rotate');
   console.log("apretar boton");
 };
-
+titleShare.addEventListener("click", CollFormuSh);
 jsbnsh.addEventListener("click", CollFormuSh);
+
+
+
+
 
 
 
