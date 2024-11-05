@@ -30,6 +30,15 @@
 
 .button-reset {
   margin-top: 30px;
+  
+  
+}
+.respa{
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:  0.3s ease;
+  a:hover {background-color: $colorFont5;}
 }
 
 .defoultimage {
