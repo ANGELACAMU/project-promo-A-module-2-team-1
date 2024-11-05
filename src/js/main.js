@@ -26,16 +26,13 @@ const palette2 = document.querySelector(".js-p-two");
 const palette3 = document.querySelector(".js-p-three");
 
 const handlePalette = (event) => {
-    dataForm.field5 = event.target.value;
-    console.log(dataForm);
-  };
-  
-  palette1.addEventListener("input", handlePalette);
-  palette2.addEventListener("input", handlePalette);
-  palette3.addEventListener("input", handlePalette);
+  dataForm.field5 = event.target.id;
+  console.log(dataForm);
+};
 
-
-
+palette1.addEventListener("input", handlePalette);
+palette2.addEventListener("input", handlePalette);
+palette3.addEventListener("input", handlePalette);
 
 //MANA
 const inputSpecial = document.querySelector(".js-special-input");
