@@ -42,3 +42,4 @@ function writeImage() {
  * - al campo oculto para cuando cambie su value
  */
 fileField.addEventListener('change', getImage);
+
