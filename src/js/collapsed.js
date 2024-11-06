@@ -25,7 +25,7 @@ Desplegaskill.classList.add('collapsed');
 function CollFormuSkill() {
   Desplegaskill.classList.toggle('collapsed');
   jsbnsk.classList.toggle('js-btn-rotate');
-  console.log("apretar boton");
+
 
 };
 
@@ -36,7 +36,7 @@ Desplegash.classList.add("collapsed");
 function CollFormuSh() {
   Desplegash.classList.toggle('collapsed');
   jsbnsh.classList.toggle('js-btn-rotate');
-  console.log("apretar boton");
+
 };
 titleShare.addEventListener("click", CollFormuSh);
 jsbnsh.addEventListener("click", CollFormuSh);
