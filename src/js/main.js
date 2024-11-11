@@ -1,5 +1,18 @@
 "use strict";
 
+//boton share
+const buttonCard = document.querySelector(".js-button-card");
+const cardCreated = document.querySelector(".js-card-created");
+const shareX = document.querySelector(".js-share-x");
+const linkCard = document.querySelector(".link-card");
+const title = document.querySelector(".js-preview");
+
+buttonCard.addEventListener("click", (ev) => {
+  //   ev.preventDefault();
+  shareX.classList.toggle("collapsed");
+  cardCreated.innerHTML = "La tarjeta ha sido creada";
+});
+
 const dataForm = {
   field1: 0,
   field2: "",
@@ -10,14 +23,43 @@ const dataForm = {
   photo: "",
 };
 
+//llamada al servidor para la tarjeta
+
+function handleCreateCard(event) {
+  event.preventDefault();
+  fetch("https://dev.adalab.es/api/info/data", {
+    method: "POST",
+    body: JSON.stringify(dataForm),
+    headers: { "content-type": "application/json" },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const idCard = data.infoID;
+
+      linkCard.classList.remove("collapsed");
+      linkCard.href = `/card.html?id=${idCard}`;
+      console.log("hola:", data);
+    });
+}
+const urlParam = new URLSearchParams(window.location.search);
+const id = urlParam.get("id");
+
+fetch(`https://dev.adalab.es/api/info/${id}`)
+  .then((response) => response.json())
+  .then((data) => {
+    const cardData = data.data;
+    console.log(cardData);
+    title.innerHTML = cardData.field2;
+  });
+
+buttonCard.addEventListener("click", handleCreateCard);
+
 //NOMBRE
 const nameUser = document.querySelector(".js-name");
-const title = document.querySelector(".js-preview");
 
 nameUser.addEventListener("input", (event) => {
   title.innerHTML = event.target.value;
   dataForm.field2 = event.target.value;
-  console.log(dataForm);
 });
 
 //PALETAS DE COLORES
@@ -28,7 +70,6 @@ const palette3 = document.querySelector(".js-p-three");
 
 const handlePalette = (event) => {
   dataForm.field6 = event.target.id;
-  console.log(dataForm);
 };
 
 palette1.addEventListener("input", handlePalette);
@@ -42,7 +83,6 @@ const title2 = document.querySelector(".js-special");
 inputSpecial.addEventListener("input", (event) => {
   title2.innerHTML = event.target.value;
   dataForm.field1 = event.target.value;
-  console.log(dataForm);
 });
 //ROL
 const tank = document.querySelector(".js-tank");
@@ -53,7 +93,6 @@ const title3 = document.querySelector(".js-skill");
 const handleRoleClick = (event) => {
   title3.innerHTML = event.target.value;
   dataForm.field3 = event.target.value;
-  console.log(dataForm);
 };
 
 tank.addEventListener("input", handleRoleClick);
@@ -68,7 +107,6 @@ const creature = document.querySelector(".js-list-creature");
 creature.addEventListener("input", (event) => {
   title4.innerHTML = event.target.value;
   dataForm.field4 = event.target.value;
-  console.log(dataForm);
 });
 
 //CLASES
@@ -113,7 +151,6 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   dataForm.photo = fr.result;
-  console.log(dataForm);
 }
 
 /**
