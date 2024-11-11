@@ -1,18 +1,4 @@
-"use strict";
 
-
-const buttonCard = document.querySelector(".js-button-card");
-const cardCreated = document.querySelector(".js-card-created");
-const shareX = document.querySelector(".js-share-x");
-
-
-
-
-buttonCard.addEventListener("click", (ev) => {
-    ev.preventDefault();
-    shareX.classList.toggle("collapsed");
-    cardCreated.innerHTML = "La tarjeta ha sido creada";
-});
 
 /* GUARDO LOS DATOS QUE ESCRIBE LA USUARIA EN EL SERVIDOR
 Cuando la usuaria haga click en Crear Tarjeta,
@@ -28,11 +14,3 @@ Cuando la usuaria haga click en Crear Tarjeta,
        Pinto los datos en mi html*/
 
 
-const dataForm = {
-    field1: 0,
-    field2: "",
-    field3: "",
-    field4: "",
-    field5: "",
-    photo: "",
-};
