@@ -32,7 +32,7 @@ function CollFormuSkill() {
 jsbnsk.addEventListener("click", CollFormuSkill);
 titleSkills.addEventListener("click", CollFormuSkill);
 
-Desplegash.classList.add("collapsed");
+Desplegash.classList.toggle("collapsed");
 function CollFormuSh() {
   Desplegash.classList.toggle('collapsed');
   jsbnsh.classList.toggle('js-btn-rotate');
