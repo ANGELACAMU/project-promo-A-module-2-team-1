@@ -1,58 +1,58 @@
 "use strict";
-
-const jsbtnadd = document.querySelector(".js-btn-add");
-const jsbnsk = document.querySelector(".js-btn-add-skill");
-const Desplega = document.querySelector(".js-collapsed");
-const Desplegaskill = document.querySelector(".js-collapsed-skill");
-const Desplegash = document.querySelector(".js-collapsed-sh");
-const jsbnsh = document.querySelector(".js-btn-add-sh");
+const btnAdd = document.querySelector(".js-btn-add");
+const btnAddSkill = document.querySelector(".js-btn-add-skill");
+const collapsibleSection = document.querySelector(".js-collapsed");
+const collapsibleSkill = document.querySelector(".js-collapsed-skill");
+const collapsibleShare = document.querySelector(".js-collapsed-sh");
+const btnAddSH = document.querySelector(".js-btn-add-sh");
 const titleDesign = document.querySelector(".js-container");
 const titleSkills = document.querySelector(".js-title-skills");
 const titleShare = document.querySelector(".js-title-sh");
 
-jsbtnadd.classList.toggle("js-btn-rotate");
+// Agregar o quitar clase para animación en el primer botón
+btnAdd.classList.toggle("js-btn-rotate");
 
-function CollFormu() {
-  if (!Desplega.classList.contains("collapsed")) {
-    Desplega.classList.add("collapsed");
-    jsbtnadd.classList.toggle("js-btn-rotate");
-    CollFormuSkill(); // Abrir la siguiente sección
+function toggleCollapse() {
+  if (collapsibleSection.classList.contains("collapsed") === false) {
+    collapsibleSection.classList.add("collapsed");
+    btnAdd.classList.remove("js-btn-rotate");
   } else {
-    Desplega.classList.remove("collapsed");
-    jsbtnadd.classList.toggle("js-btn-rotate");
+    collapsibleSection.classList.remove("collapsed");
+    btnAdd.classList.add("js-btn-rotate");
   }
 }
 
-jsbtnadd.addEventListener("click", CollFormu);
-titleDesign.addEventListener("click", CollFormu);
+btnAdd.addEventListener("click", toggleCollapse);
+titleDesign.addEventListener("click", toggleCollapse);
 
-Desplegaskill.classList.add("collapsed");
+// Establecer el estado inicial del segundo contenedor
+collapsibleSkill.classList.add("collapsed");
 
-function CollFormuSkill() {
-  if (!Desplegaskill.classList.contains("collapsed")) {
-    Desplegaskill.classList.add("collapsed");
-    jsbnsk.classList.toggle("js-btn-rotate");
-    CollFormuSh(); // Abrir la siguiente sección
+function toggleSkillCollapse() {
+  if (collapsibleSkill.classList.contains("collapsed") === false) {
+    collapsibleSkill.classList.add("collapsed");
+    btnAddSkill.classList.remove("js-btn-rotate");
   } else {
-    Desplegaskill.classList.remove("collapsed");
-    jsbnsk.classList.toggle("js-btn-rotate");
+    collapsibleSkill.classList.remove("collapsed");
+    btnAddSkill.classList.add("js-btn-rotate");
   }
 }
 
-jsbnsk.addEventListener("click", CollFormuSkill);
-titleSkills.addEventListener("click", CollFormuSkill);
+btnAddSkill.addEventListener("click", toggleSkillCollapse);
+titleSkills.addEventListener("click", toggleSkillCollapse);
 
-Desplegash.classList.add("collapsed");
+// Configuración inicial del tercer contenedor
+collapsibleShare.classList.add("collapsed");
 
-function CollFormuSh() {
-  if (!Desplegash.classList.contains("collapsed")) {
-    Desplegash.classList.add("collapsed");
-    jsbnsh.classList.toggle("js-btn-rotate");
+function toggleShareCollapse() {
+  if (collapsibleShare.classList.contains("collapsed") === false) {
+    collapsibleShare.classList.add("collapsed");
+    btnAddSH.classList.remove("js-btn-rotate");
   } else {
-    Desplegash.classList.remove("collapsed");
-    jsbnsh.classList.toggle("js-btn-rotate");
+    collapsibleShare.classList.remove("collapsed");
+    btnAddSH.classList.add("js-btn-rotate");
   }
 }
 
-titleShare.addEventListener("click", CollFormuSh);
-jsbnsh.addEventListener("click", CollFormuSh);
+btnAddSH.addEventListener("click", toggleShareCollapse);
+titleShare.addEventListener("click", toggleShareCollapse);
