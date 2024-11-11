@@ -1,40 +1,38 @@
-'use strict';
+'use strict'
+console.log("konichiwa sekai");
 
 
-
-//que solo salga el desplegable cuando elija una clase con un rol equivocado
-
-
-
-
-
-/*Que cuando le de al boton de cerrar se me cierre el pop up
-
-    -seleccionar el boton de cerrar
-    -cuando la usuaria clicke ocultarlo
-*/
-
-
+const rolHeal = document.querySelector(".js-heal");
+const creatureSelect = document.querySelector(".js-list-creature");
 const popup = document.querySelector(".js-pop-up");
 const button = document.querySelector(".js-close-button");
 
-function handleClosePopuop() {
-    console.log("ha hecho click en cerrar");
-    popup.classList.add("hidden")
+// Verificar si se cumplen las condiciones para mostrar el pop-up
+function showPopup() {
+    // Obtenemos el valor de la criatura seleccionada
+    const selectedCreature = creatureSelect.value;
 
+    //
+    if (
+        rolHeal.checked &&  //  'Heal' esté seleccionado con .cheked y las dos barras son este o este o este o este
+        (selectedCreature === 'Zombie' ||
+            selectedCreature === 'Vampiro' ||
+            selectedCreature === 'Orco' ||
+            selectedCreature === 'No-muerto')
+    ) {
+        popup.classList.remove("hidden");
+    }
 }
 
-button.addEventListener("click", handleClosePopuop); /* no le pongo los () a handleClosePopuop porque no soy yo quein la ejecuta, sino el navegador */
+
+rolHeal.addEventListener("change", showPopup);
+creatureSelect.addEventListener("change", showPopup);
 
 
+function closePopup() {
+    popup.classList.add("hidden");
+}
 
 
-
-
-
-
-
-
-
-
+button.addEventListener("click", closePopup);
 
