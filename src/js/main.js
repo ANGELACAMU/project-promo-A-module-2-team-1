@@ -22,7 +22,7 @@ const dataForm = {
   field6: "",
   photo: "",
 };
-
+console.log(dataForm);
 //llamada al servidor para la tarjeta
 
 function handleCreateCard(event) {
@@ -35,8 +35,9 @@ function handleCreateCard(event) {
     .then((response) => response.json())
     .then((data) => {
       const idCard = data.infoID;
+      const createdAt = data.createdAt;
       linkCard.classList.remove("collapsed");
-      linkCard.href = `/card.html?id=${idCard}`;
+      linkCard.href = `../card.html?id=${idCard}`;
       shareX.innerHTML = `<a href="https://twitter.com/intent/tweet?text=My%20character%20sheet%20by%20PURR~SKILLS%20 ฅ•ω•ฅ &hashtags=purrskills,rol,fichapersonaje,sheet,fy:heart_eyes_cat:
       https://dev.adalab.es/api/info/${idCard}"
               target="_blank">
@@ -46,25 +47,23 @@ function handleCreateCard(event) {
                       alt="twitter icon">
               </button>
           </a>`;
+      fetch(`https://dev.adalab.es/api/info/${idCard}`)
+        .then((response) => response.json())
+        .then((data) => {
+          const cardData = data.data;
+          console.log(cardData);
+          nameUser.innerHTML = cardData.field2;
+          inputSpecial.innerHTML = cardData.field1;
+          title3.innerHTML = cardData.field3;
+          creature.innerHTML = cardData.field4;
+          listClass.innerHTML = cardData.field5;
+        });
     });
 }
 const urlParam = new URLSearchParams(window.location.search);
 const id = urlParam.get("id");
 
-fetch(`https://dev.adalab.es/api/info/${id}`)
-  .then((response) => response.json())
-  .then((data) => {
-    const cardData = data.data;
-
-    title.innerHTML = cardData.field2;
-    title2.innerHTML = cardData.field1;
-    title3.innerHTML = cardData.field3;
-    title4.innerHTML = cardData.field4;
-    title5.innerHTML = cardData.field5;
-    
-  });
-
-buttonCard.addEventListener("click", handleCreateCard);
+linkCard.addEventListener("click", handleCreateCard);
 
 //NOMBRE
 const nameUser = document.querySelector(".js-name");
@@ -72,7 +71,7 @@ const nameUser = document.querySelector(".js-name");
 nameUser.addEventListener("input", (event) => {
   title.innerHTML = event.target.value;
   dataForm.field2 = event.target.value;
-  console.log()
+  console.log();
 });
 
 //PALETAS DE COLORES
