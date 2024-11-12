@@ -35,10 +35,17 @@ function handleCreateCard(event) {
     .then((response) => response.json())
     .then((data) => {
       const idCard = data.infoID;
-
       linkCard.classList.remove("collapsed");
       linkCard.href = `/card.html?id=${idCard}`;
-      console.log("hola:", data);
+      shareX.innerHTML = `<a href="https://twitter.com/intent/tweet?text=My%20character%20sheet%20by%20PURR~SKILLS%20 ฅ•ω•ฅ &hashtags=purrskills,rol,fichapersonaje,sheet,fy:heart_eyes_cat:
+      https://dev.adalab.es/api/info/${idCard}"
+              target="_blank">
+              <button class="button_twitter twitter-share-button">
+                  Compartir en
+                  <img class="button_twitter_icon2" src="/images/square-x-twitter-brands-solid.svg"
+                      alt="twitter icon">
+              </button>
+          </a>`;
     });
 }
 const urlParam = new URLSearchParams(window.location.search);
@@ -48,8 +55,13 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
   .then((response) => response.json())
   .then((data) => {
     const cardData = data.data;
-    console.log(cardData);
+
     title.innerHTML = cardData.field2;
+    title2.innerHTML = cardData.field1;
+    title3.innerHTML = cardData.field3;
+    title4.innerHTML = cardData.field4;
+    title5.innerHTML = cardData.field5;
+    
   });
 
 buttonCard.addEventListener("click", handleCreateCard);
@@ -60,6 +72,7 @@ const nameUser = document.querySelector(".js-name");
 nameUser.addEventListener("input", (event) => {
   title.innerHTML = event.target.value;
   dataForm.field2 = event.target.value;
+  console.log()
 });
 
 //PALETAS DE COLORES
