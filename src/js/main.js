@@ -8,49 +8,49 @@ const linkCard = document.querySelector(".link-card");
 const title = document.querySelector(".js-preview");
 
 buttonCard.addEventListener("click", (ev) => {
-  //   ev.preventDefault();
-  shareX.classList.toggle("collapsed");
-  cardCreated.innerHTML = "La tarjeta ha sido creada";
+    //   ev.preventDefault();
+    shareX.classList.toggle("collapsed");
+    cardCreated.innerHTML = "La tarjeta ha sido creada";
 });
 
 const dataForm = {
-  field1: 0,
-  field2: "",
-  field3: "",
-  field4: "",
-  field5: "",
-  field6: "",
-  photo: "",
+    field1: 0,
+    field2: "",
+    field3: "",
+    field4: "",
+    field5: "",
+    field6: "",
+    photo: "",
 };
 
 //llamada al servidor para la tarjeta
 
 function handleCreateCard(event) {
-  event.preventDefault();
-  fetch("https://dev.adalab.es/api/info/data", {
-    method: "POST",
-    body: JSON.stringify(dataForm),
-    headers: { "content-type": "application/json" },
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      const idCard = data.infoID;
+    event.preventDefault();
+    fetch("https://dev.adalab.es/api/info/data", {
+        method: "POST",
+        body: JSON.stringify(dataForm),
+        headers: { "content-type": "application/json" },
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            const idCard = data.infoID;
 
-      linkCard.classList.remove("collapsed");
-      linkCard.href = `/card.html?id=${idCard}`;
-      console.log("hola:", data);
-    });
+            linkCard.classList.remove("collapsed");
+            linkCard.href = `/card.html?id=${idCard}`;
+            console.log("hola:", data);
+        });
 }
 const urlParam = new URLSearchParams(window.location.search);
 const id = urlParam.get("id");
 
 fetch(`https://dev.adalab.es/api/info/${id}`)
-  .then((response) => response.json())
-  .then((data) => {
-    const cardData = data.data;
-    console.log(cardData);
-    title.innerHTML = cardData.field2;
-  });
+    .then((response) => response.json())
+    .then((data) => {
+        const cardData = data.data;
+        console.log(cardData);
+        title.innerHTML = cardData.field2;
+    });
 
 buttonCard.addEventListener("click", handleCreateCard);
 
@@ -58,8 +58,8 @@ buttonCard.addEventListener("click", handleCreateCard);
 const nameUser = document.querySelector(".js-name");
 
 nameUser.addEventListener("input", (event) => {
-  title.innerHTML = event.target.value;
-  dataForm.field2 = event.target.value;
+    title.innerHTML = event.target.value;
+    dataForm.field2 = event.target.value;
 });
 
 //PALETAS DE COLORES
@@ -69,7 +69,7 @@ const palette2 = document.querySelector(".js-p-two");
 const palette3 = document.querySelector(".js-p-three");
 
 const handlePalette = (event) => {
-  dataForm.field6 = event.target.id;
+    dataForm.field6 = event.target.id;
 };
 
 palette1.addEventListener("input", handlePalette);
@@ -81,8 +81,8 @@ const inputSpecial = document.querySelector(".js-special-input");
 const title2 = document.querySelector(".js-special");
 
 inputSpecial.addEventListener("input", (event) => {
-  title2.innerHTML = event.target.value;
-  dataForm.field1 = event.target.value;
+    title2.innerHTML = event.target.value;
+    dataForm.field1 = event.target.value;
 });
 //ROL
 const tank = document.querySelector(".js-tank");
@@ -91,8 +91,8 @@ const dps = document.querySelector(".js-dps");
 const title3 = document.querySelector(".js-skill");
 
 const handleRoleClick = (event) => {
-  title3.innerHTML = event.target.value;
-  dataForm.field3 = event.target.value;
+    title3.innerHTML = event.target.value;
+    dataForm.field3 = event.target.value;
 };
 
 tank.addEventListener("input", handleRoleClick);
@@ -105,8 +105,8 @@ const title4 = document.querySelector(".js-creature");
 const creature = document.querySelector(".js-list-creature");
 
 creature.addEventListener("input", (event) => {
-  title4.innerHTML = event.target.value;
-  dataForm.field4 = event.target.value;
+    title4.innerHTML = event.target.value;
+    dataForm.field4 = event.target.value;
 });
 
 //CLASES
@@ -114,8 +114,8 @@ const title5 = document.querySelector(".js-class");
 const listClass = document.querySelector(".js-list-class");
 
 listClass.addEventListener("input", (event) => {
-  title5.innerHTML = event.target.value;
-  dataForm.field5 = event.target.value;
+    title5.innerHTML = event.target.value;
+    dataForm.field5 = event.target.value;
 });
 
 //AVATAR
@@ -133,9 +133,9 @@ const profilePreview = document.querySelector(".js__profile-preview");
  * @param {evento} e
  */
 function getImage(e) {
-  const myFile = e.currentTarget.files[0];
-  fr.addEventListener("load", writeImage);
-  fr.readAsDataURL(myFile);
+    const myFile = e.currentTarget.files[0];
+    fr.addEventListener("load", writeImage);
+    fr.readAsDataURL(myFile);
 }
 
 /**
@@ -143,14 +143,14 @@ function getImage(e) {
  * trabajar con ellos ;)
  */
 function writeImage() {
-  /* En la propiedad `result` de nuestro FR se almacena
-   * el resultado. Ese resultado de procesar el fichero que hemos cargado
-   * podemos pasarlo como background a la imagen de perfil y a la vista previa
-   * de nuestro componente.
-   */
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
-  dataForm.photo = fr.result;
+    /* En la propiedad `result` de nuestro FR se almacena
+     * el resultado. Ese resultado de procesar el fichero que hemos cargado
+     * podemos pasarlo como background a la imagen de perfil y a la vista previa
+     * de nuestro componente.
+     */
+    profileImage.style.backgroundImage = `url(${fr.result})`;
+    profilePreview.style.backgroundImage = `url(${fr.result})`;
+    dataForm.photo = fr.result;
 }
 
 /**
