@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 
 const buttonCard = document.querySelector(".js-button-card");
 const cardCreated = document.querySelector(".js-card-created");
@@ -13,3 +13,4 @@ buttonCard.addEventListener("click", (ev) => {
     shareX.classList.toggle("collapsed");
     cardCreated.innerHTML = "La tarjeta ha sido creada";
 });
+*/
