@@ -1,5 +1,6 @@
 "use strict";
 
+<<<<<<< HEAD
 //boton share
 const buttonCard = document.querySelector(".js-button-card");
 const cardCreated = document.querySelector(".js-card-created");
@@ -21,6 +22,15 @@ const dataForm = {
   field5: "",
   field6: "",
   photo: "",
+=======
+const data = {
+    "field1": 0,
+    "field2": "",
+    "field3": "",
+    "field4": "",
+    "field5": "",
+    "photo": ""
+>>>>>>> dev
 };
 
 //llamada al servidor para la tarjeta
@@ -87,9 +97,15 @@ linkCard.addEventListener("click", handleCreateCard);
 const nameUser = document.querySelector(".js-name");
 
 nameUser.addEventListener("input", (event) => {
+<<<<<<< HEAD
   title.innerHTML = event.target.value;
   dataForm.field2 = event.target.value;
   console.log();
+=======
+    title.innerHTML = event.target.value;
+    data.field2 = event.target.value;
+
+>>>>>>> dev
 });
 
 //PALETAS DE COLORES
@@ -99,7 +115,12 @@ const palette2 = document.querySelector(".js-p-two");
 const palette3 = document.querySelector(".js-p-three");
 
 const handlePalette = (event) => {
+<<<<<<< HEAD
   dataForm.field6 = event.target.id;
+=======
+    data.field5 = event.target.id;
+
+>>>>>>> dev
 };
 
 palette1.addEventListener("input", handlePalette);
@@ -111,8 +132,14 @@ const inputSpecial = document.querySelector(".js-special-input");
 const title2 = document.querySelector(".js-special");
 
 inputSpecial.addEventListener("input", (event) => {
+<<<<<<< HEAD
   title2.innerHTML = event.target.value;
   dataForm.field1 = event.target.value;
+=======
+    title2.innerHTML = event.target.value;
+    data.field1 = event.target.value;
+
+>>>>>>> dev
 });
 //ROL
 const tank = document.querySelector(".js-tank");
@@ -121,8 +148,14 @@ const dps = document.querySelector(".js-dps");
 const title3 = document.querySelector(".js-skill");
 
 const handleRoleClick = (event) => {
+<<<<<<< HEAD
   title3.innerHTML = event.target.value;
   dataForm.field3 = event.target.value;
+=======
+    title3.innerHTML = event.target.value;
+    data.field3 = event.target.value;
+
+>>>>>>> dev
 };
 
 tank.addEventListener("input", handleRoleClick);
@@ -135,8 +168,14 @@ const title4 = document.querySelector(".js-creature");
 const creature = document.querySelector(".js-list-creature");
 
 creature.addEventListener("input", (event) => {
+<<<<<<< HEAD
   title4.innerHTML = event.target.value;
   dataForm.field4 = event.target.value;
+=======
+    title4.innerHTML = event.target.value;
+    data.field4 = event.target.value;
+
+>>>>>>> dev
 });
 
 //CLASES
@@ -144,8 +183,13 @@ const title5 = document.querySelector(".js-class");
 const listClass = document.querySelector(".js-list-class");
 
 listClass.addEventListener("input", (event) => {
+<<<<<<< HEAD
   title5.innerHTML = event.target.value;
   dataForm.field5 = event.target.value;
+=======
+    title5.innerHTML = event.target.value;
+    data.field6 = event.target.value;
+>>>>>>> dev
 });
 
 //AVATAR
@@ -173,6 +217,7 @@ function getImage(e) {
  * trabajar con ellos ;)
  */
 function writeImage() {
+<<<<<<< HEAD
   /* En la propiedad `result` de nuestro FR se almacena
    * el resultado. Ese resultado de procesar el fichero que hemos cargado
    * podemos pasarlo como background a la imagen de perfil y a la vista previa
@@ -181,6 +226,19 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   dataForm.photo = fr.result;
+=======
+    /* En la propiedad `result` de nuestro FR se almacena
+     * el resultado. Ese resultado de procesar el fichero que hemos cargado
+     * podemos pasarlo como background a la imagen de perfil y a la vista previa
+     * de nuestro componente.
+     */
+    profileImage.style.backgroundImage = `url(${fr.result})`;
+    profilePreview.style.backgroundImage = `url(${fr.result})`;
+    data.photo = fr.result;
+    data.photo = fr.result.slice(0, 100); // añadimso esto porqe sino el servidor no deja enviar la foto, nos lo ha dicho el grupo de Kris/Kendal/Raquel/Belen.. el servidor daba error de que era demasiado largo
+
+
+>>>>>>> dev
 }
 
 /**
@@ -189,3 +247,73 @@ function writeImage() {
  * - al campo oculto para cuando cambie su value
  */
 fileField.addEventListener("change", getImage);
+
+
+
+//pruebas servidor -- carmen
+/* probes----
+const Objectdata = {
+    data.field1 = 
+    data.field2 =
+    data.field3 =
+    data.field4 =
+    data.field5 =
+    data.photo =
+    data.photo = fr.result;
+
+};*/
+
+//fusiono el share.js de angela aqui porqe es todo evento de ese boton y cambio lo de ''tarjeta ha sido creada'' quito su js del form
+
+
+const buttonCard = document.querySelector(".js-button-card");
+const cardCreated = document.querySelector(".js-card-created");
+const shareX = document.querySelector(".js-share-x");
+const linkCard = document.querySelector(".js-link");
+
+
+
+const createCardButton = document.querySelector(".js-button-card");
+
+const handleCreateCard = (ev) => {
+    ev.preventDefault();
+    shareX.classList.toggle("collapsed");
+    console.log("click en crear tajeta")
+    fetch("https://dev.adalab.es/api/info/data", {
+        method: "POST", //es un post proqe enviamos los datos
+        body: JSON.stringify(data),
+        headers: { "Content-type": "application/json" }
+    })
+        .then(response => response.json())
+        .then(data => {
+            const idCard = data.infoID;
+
+            linkCard.classList.remove("collapsed");
+            linkCard.href = `./card.html?id=${idCard}`
+            shareX.innerHTML = `<a href="https://twitter.com/intent/tweet?text=My%20character%20sheet%20by%20PURR~SKILLS%20 ฅ•ω•ฅ &hashtags=purrskills,rol,fichapersonaje,sheet,fy😻 
+            https://dev.adalab.es/api/info/${idCard}"
+                    target="_blank">
+                    <button class="button_twitter twitter-share-button">
+                        Compartir en
+                        <img class="button_twitter_icon2" src="/images/square-x-twitter-brands-solid.svg"
+                            alt="twitter icon">
+                    </button>
+                </a>`
+        })
+
+
+}
+
+createCardButton.addEventListener("click", handleCreateCard);
+
+
+
+
+
+
+
+
+
+
+
+
