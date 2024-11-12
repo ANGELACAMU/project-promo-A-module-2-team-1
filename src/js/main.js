@@ -22,7 +22,7 @@ const dataForm = {
   field6: "",
   photo: "",
 };
-
+console.log(dataForm);
 //llamada al servidor para la tarjeta
 
 function handleCreateCard(event) {
@@ -35,10 +35,29 @@ function handleCreateCard(event) {
     .then((response) => response.json())
     .then((data) => {
       const idCard = data.infoID;
-
+      const createdAt = data.createdAt;
       linkCard.classList.remove("collapsed");
-      linkCard.href = `/card.html?id=${idCard}`;
-      console.log("hola:", data);
+      linkCard.href = `../card.html?id=${idCard}`;
+      shareX.innerHTML = `<a href="https://twitter.com/intent/tweet?text=My%20character%20sheet%20by%20PURR~SKILLS%20 ฅ•ω•ฅ &hashtags=purrskills,rol,fichapersonaje,sheet,fy:heart_eyes_cat:
+      https://dev.adalab.es/api/info/${idCard}"
+              target="_blank">
+              <button class="button_twitter twitter-share-button">
+                  Compartir en
+                  <img class="button_twitter_icon2" src="/images/square-x-twitter-brands-solid.svg"
+                      alt="twitter icon">
+              </button>
+          </a>`;
+      fetch(`https://dev.adalab.es/api/info/${idCard}`)
+        .then((response) => response.json())
+        .then((data) => {
+          const cardData = data.data;
+          console.log(cardData);
+          nameUser.innerHTML = cardData.field2;
+          inputSpecial.innerHTML = cardData.field1;
+          title3.innerHTML = cardData.field3;
+          creature.innerHTML = cardData.field4;
+          listClass.innerHTML = cardData.field5;
+        });
     });
 }
 const urlParam = new URLSearchParams(window.location.search);
@@ -53,6 +72,7 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
   });
 
 buttonCard.addEventListener("click", handleCreateCard);
+linkCard.addEventListener("click", handleCreateCard);
 
 //NOMBRE
 const nameUser = document.querySelector(".js-name");
@@ -60,6 +80,7 @@ const nameUser = document.querySelector(".js-name");
 nameUser.addEventListener("input", (event) => {
   title.innerHTML = event.target.value;
   dataForm.field2 = event.target.value;
+  console.log();
 });
 
 //PALETAS DE COLORES
