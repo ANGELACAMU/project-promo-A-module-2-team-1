@@ -64,6 +64,15 @@ function handleCreateCard(event) {
 const urlParam = new URLSearchParams(window.location.search);
 const id = urlParam.get("id");
 
+fetch(`https://dev.adalab.es/api/info/${id}`)
+  .then((response) => response.json())
+  .then((data) => {
+    const cardData = data.data;
+    console.log(cardData);
+    title.innerHTML = cardData.field2;
+  });
+
+buttonCard.addEventListener("click", handleCreateCard);
 linkCard.addEventListener("click", handleCreateCard);
 
 //NOMBRE
