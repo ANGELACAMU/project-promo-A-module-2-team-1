@@ -35,6 +35,7 @@ function handleCreateCard(event) {
     .then((response) => response.json())
     .then((data) => {
       const idCard = data.infoID;
+      console.log(idCard);
 
       linkCard.classList.remove("collapsed");
       linkCard.href = `/card.html?id=${idCard}`;
