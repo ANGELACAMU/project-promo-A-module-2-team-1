@@ -22,11 +22,12 @@ const dataForm = {
   field6: "",
   photo: "",
 };
-console.log(dataForm);
+
 //llamada al servidor para la tarjeta
 
 function handleCreateCard(event) {
   event.preventDefault();
+  objectCreated()
   fetch("https://dev.adalab.es/api/info/data", {
     method: "POST",
     body: JSON.stringify(dataForm),
@@ -52,11 +53,11 @@ function handleCreateCard(event) {
         .then((data) => {
           const cardData = data.data;
           console.log(cardData);
-          nameUser.innerHTML = cardData.field2;
-          inputSpecial.innerHTML = cardData.field1;
-          title3.innerHTML = cardData.field3;
-          creature.innerHTML = cardData.field4;
-          listClass.innerHTML = cardData.field5;
+          // nameUser.innerHTML = cardData.field2;
+          // inputSpecial.innerHTML = cardData.field1;
+          // title3.innerHTML = cardData.field3;
+          // creature.innerHTML = cardData.field4;
+          // listClass.innerHTML = cardData.field5;
         });
     });
 }
