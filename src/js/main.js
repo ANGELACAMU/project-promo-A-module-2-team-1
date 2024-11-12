@@ -17,7 +17,7 @@ const title = document.querySelector(".js-preview");
 nameUser.addEventListener("input", (event) => {
     title.innerHTML = event.target.value;
     data.field2 = event.target.value;
-    //console.log(data);
+
 });
 
 //PALETAS DE COLORES
@@ -28,7 +28,7 @@ const palette3 = document.querySelector(".js-p-three");
 
 const handlePalette = (event) => {
     data.field5 = event.target.id;
-    // console.log(data);
+
 };
 
 palette1.addEventListener("input", handlePalette);
@@ -42,7 +42,7 @@ const title2 = document.querySelector(".js-special");
 inputSpecial.addEventListener("input", (event) => {
     title2.innerHTML = event.target.value;
     data.field1 = event.target.value;
-    //console.log("prueba", data);
+
 });
 //ROL
 const tank = document.querySelector(".js-tank");
@@ -53,7 +53,7 @@ const title3 = document.querySelector(".js-skill");
 const handleRoleClick = (event) => {
     title3.innerHTML = event.target.value;
     data.field3 = event.target.value;
-    //console.log(data);
+
 };
 
 tank.addEventListener("input", handleRoleClick);
@@ -68,7 +68,7 @@ const creature = document.querySelector(".js-list-creature");
 creature.addEventListener("input", (event) => {
     title4.innerHTML = event.target.value;
     data.field4 = event.target.value;
-    //console.log(data);
+
 });
 
 //CLASES
@@ -77,6 +77,7 @@ const listClass = document.querySelector(".js-list-class");
 
 listClass.addEventListener("input", (event) => {
     title5.innerHTML = event.target.value;
+    data.field6 = event.target.value;
 });
 
 //AVATAR
@@ -114,6 +115,7 @@ function writeImage() {
     data.photo = fr.result;
     data.photo = fr.result.slice(0, 100); // añadimso esto porqe sino el servidor no deja enviar la foto, nos lo ha dicho el grupo de Kris/Kendal/Raquel/Belen.. el servidor daba error de que era demasiado largo
 
+
 }
 
 /**
@@ -126,8 +128,17 @@ fileField.addEventListener("change", getImage);
 
 
 //pruebas servidor -- carmen
+/* probes----
+const Objectdata = {
+    data.field1 = 
+    data.field2 =
+    data.field3 =
+    data.field4 =
+    data.field5 =
+    data.photo =
+    data.photo = fr.result;
 
-
+};*/
 
 //fusiono el share.js de angela aqui porqe es todo evento de ese boton y cambio lo de ''tarjeta ha sido creada'' quito su js del form
 
@@ -153,7 +164,7 @@ const handleCreateCard = (ev) => {
         .then(response => response.json())
         .then(data => {
             const idCard = data.infoID;
-            //console.log("id:", idCard);
+
             linkCard.classList.remove("collapsed");
             linkCard.href = `./card.html?id=${idCard}`
             shareX.innerHTML = `<a href="https://twitter.com/intent/tweet?text=My%20character%20sheet%20by%20PURR~SKILLS%20 ฅ•ω•ฅ &hashtags=purrskills,rol,fichapersonaje,sheet,fy😻 
@@ -171,6 +182,12 @@ const handleCreateCard = (ev) => {
 }
 
 createCardButton.addEventListener("click", handleCreateCard);
+
+
+
+
+
+
 
 
 
