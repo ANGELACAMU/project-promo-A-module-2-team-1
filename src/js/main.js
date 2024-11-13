@@ -147,6 +147,7 @@ const buttonCard = document.querySelector(".js-button-card");
 const cardCreated = document.querySelector(".js-card-created");
 const shareX = document.querySelector(".js-share-x");
 const linkCard = document.querySelector(".js-link");
+const link = document.querySelector(".js-linkApi")
 
 
 
@@ -176,12 +177,20 @@ const handleCreateCard = (ev) => {
                             alt="twitter icon">
                     </button>
                 </a>`
+            link.classList.remove("collapsed");
+            link.href = `./card.html?id=${idCard}`;
+            link.innerHTML = `https://dev.adalab.es/api/info/${idCard}`
         })
 
 
 }
 
 createCardButton.addEventListener("click", handleCreateCard);
+
+
+
+
+
 
 
 
