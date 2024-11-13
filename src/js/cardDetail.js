@@ -23,7 +23,6 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
         manaCard.innerHTML = cardData.field1;
         claseCard.innerHTML = cardData.field6;
         colorCard.classList.add(`palette-preview-${cardData.field5}`);
-
         profilePreview.style.backgroundImage = `url(${cardData.photo})`;
 
     })
