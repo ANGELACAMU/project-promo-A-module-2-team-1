@@ -100,7 +100,7 @@ function getImage(e) {
             ctx.drawImage(img, 0, 0, width, height);
 
             // Convertir la imagen en base64 comprimida
-            const compressedImage = canvas.toDataURL("image/jpeg", 1); // Calidad al 90%
+            const compressedImage = canvas.toDataURL("image/jpeg", 0.9); // Calidad al 90%
 
             // Aplicar la imagen comprimida como fondo
             profileImage.style.backgroundImage = `url(${compressedImage})`;
