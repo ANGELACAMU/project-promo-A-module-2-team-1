@@ -1,28 +1,5 @@
 "use strict";
 
-<<<<<<< HEAD
-//boton share
-const buttonCard = document.querySelector(".js-button-card");
-const cardCreated = document.querySelector(".js-card-created");
-const shareX = document.querySelector(".js-share-x");
-const linkCard = document.querySelector(".link-card");
-const title = document.querySelector(".js-preview");
-
-buttonCard.addEventListener("click", (ev) => {
-  //   ev.preventDefault();
-  shareX.classList.toggle("collapsed");
-  cardCreated.innerHTML = "La tarjeta ha sido creada";
-});
-
-const dataForm = {
-  field1: 0,
-  field2: "",
-  field3: "",
-  field4: "",
-  field5: "",
-  field6: "",
-  photo: "",
-=======
 const data = {
     "field1": 0,
     "field2": "",
@@ -30,82 +7,17 @@ const data = {
     "field4": "",
     "field5": "",
     "photo": ""
->>>>>>> dev
 };
-
-//llamada al servidor para la tarjeta
-// const objectCreated = () => {
-//   dataForm.field1 = title2;
-//   dataForm.field2 = title;
-//   dataForm.field3 = title3;
-//   dataForm.field4 = title4;
-//   dataForm.field5 = title5;
-//   dataForm.photo = fr.result;
-// };
-
-function handleCreateCard(event) {
-  event.preventDefault();
-  // objectCreated();
-  fetch("https://dev.adalab.es/api/info/data", {
-    method: "POST",
-    body: JSON.stringify(dataForm),
-    headers: { "content-type": "application/json" },
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      const idCard = data.infoID;
-      const createdAt = data.createdAt;
-      linkCard.classList.remove("collapsed");
-      linkCard.href = `../card.html?id=${idCard}`;
-      shareX.innerHTML = `<a href="https://twitter.com/intent/tweet?text=My%20character%20sheet%20by%20PURR~SKILLS%20 ฅ•ω•ฅ &hashtags=purrskills,rol,fichapersonaje,sheet,fy:heart_eyes_cat:
-      https://dev.adalab.es/api/info/${idCard}"
-              target="_blank">
-              <button class="button_twitter twitter-share-button">
-                  Compartir en
-                  <img class="button_twitter_icon2" src="/images/square-x-twitter-brands-solid.svg"
-                      alt="twitter icon">
-              </button>
-          </a>`;
-      fetch(`https://dev.adalab.es/api/info/${idCard}`)
-        .then((response) => response.json())
-        .then((data) => {
-          const cardData = data.data;
-          console.log(cardData);
-          nameUser.innerHTML = cardData.field2;
-          inputSpecial.innerHTML = cardData.field1;
-          title3.innerHTML = cardData.field3;
-          creature.innerHTML = cardData.field4;
-          listClass.innerHTML = cardData.field5;
-        });
-    });
-}
-const urlParam = new URLSearchParams(window.location.search);
-const id = urlParam.get("id");
-
-fetch(`https://dev.adalab.es/api/info/${id}`)
-  .then((response) => response.json())
-  .then((data) => {
-    const cardData = data.data;
-    console.log(cardData);
-    title.innerHTML = cardData.field2;
-  });
-
-buttonCard.addEventListener("click", handleCreateCard);
-linkCard.addEventListener("click", handleCreateCard);
 
 //NOMBRE
 const nameUser = document.querySelector(".js-name");
+const title = document.querySelector(".js-preview");
+
 
 nameUser.addEventListener("input", (event) => {
-<<<<<<< HEAD
-  title.innerHTML = event.target.value;
-  dataForm.field2 = event.target.value;
-  console.log();
-=======
     title.innerHTML = event.target.value;
     data.field2 = event.target.value;
 
->>>>>>> dev
 });
 
 //PALETAS DE COLORES
@@ -115,12 +27,8 @@ const palette2 = document.querySelector(".js-p-two");
 const palette3 = document.querySelector(".js-p-three");
 
 const handlePalette = (event) => {
-<<<<<<< HEAD
-  dataForm.field6 = event.target.id;
-=======
     data.field5 = event.target.id;
 
->>>>>>> dev
 };
 
 palette1.addEventListener("input", handlePalette);
@@ -132,14 +40,9 @@ const inputSpecial = document.querySelector(".js-special-input");
 const title2 = document.querySelector(".js-special");
 
 inputSpecial.addEventListener("input", (event) => {
-<<<<<<< HEAD
-  title2.innerHTML = event.target.value;
-  dataForm.field1 = event.target.value;
-=======
     title2.innerHTML = event.target.value;
     data.field1 = event.target.value;
 
->>>>>>> dev
 });
 //ROL
 const tank = document.querySelector(".js-tank");
@@ -148,14 +51,9 @@ const dps = document.querySelector(".js-dps");
 const title3 = document.querySelector(".js-skill");
 
 const handleRoleClick = (event) => {
-<<<<<<< HEAD
-  title3.innerHTML = event.target.value;
-  dataForm.field3 = event.target.value;
-=======
     title3.innerHTML = event.target.value;
     data.field3 = event.target.value;
 
->>>>>>> dev
 };
 
 tank.addEventListener("input", handleRoleClick);
@@ -168,14 +66,9 @@ const title4 = document.querySelector(".js-creature");
 const creature = document.querySelector(".js-list-creature");
 
 creature.addEventListener("input", (event) => {
-<<<<<<< HEAD
-  title4.innerHTML = event.target.value;
-  dataForm.field4 = event.target.value;
-=======
     title4.innerHTML = event.target.value;
     data.field4 = event.target.value;
 
->>>>>>> dev
 });
 
 //CLASES
@@ -183,13 +76,8 @@ const title5 = document.querySelector(".js-class");
 const listClass = document.querySelector(".js-list-class");
 
 listClass.addEventListener("input", (event) => {
-<<<<<<< HEAD
-  title5.innerHTML = event.target.value;
-  dataForm.field5 = event.target.value;
-=======
     title5.innerHTML = event.target.value;
     data.field6 = event.target.value;
->>>>>>> dev
 });
 
 //AVATAR
@@ -207,9 +95,9 @@ const profilePreview = document.querySelector(".js__profile-preview");
  * @param {evento} e
  */
 function getImage(e) {
-  const myFile = e.currentTarget.files[0];
-  fr.addEventListener("load", writeImage);
-  fr.readAsDataURL(myFile);
+    const myFile = e.currentTarget.files[0];
+    fr.addEventListener("load", writeImage);
+    fr.readAsDataURL(myFile);
 }
 
 /**
@@ -217,16 +105,6 @@ function getImage(e) {
  * trabajar con ellos ;)
  */
 function writeImage() {
-<<<<<<< HEAD
-  /* En la propiedad `result` de nuestro FR se almacena
-   * el resultado. Ese resultado de procesar el fichero que hemos cargado
-   * podemos pasarlo como background a la imagen de perfil y a la vista previa
-   * de nuestro componente.
-   */
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
-  dataForm.photo = fr.result;
-=======
     /* En la propiedad `result` de nuestro FR se almacena
      * el resultado. Ese resultado de procesar el fichero que hemos cargado
      * podemos pasarlo como background a la imagen de perfil y a la vista previa
@@ -238,7 +116,6 @@ function writeImage() {
     data.photo = fr.result.slice(0, 100); // añadimso esto porqe sino el servidor no deja enviar la foto, nos lo ha dicho el grupo de Kris/Kendal/Raquel/Belen.. el servidor daba error de que era demasiado largo
 
 
->>>>>>> dev
 }
 
 /**
@@ -270,6 +147,7 @@ const buttonCard = document.querySelector(".js-button-card");
 const cardCreated = document.querySelector(".js-card-created");
 const shareX = document.querySelector(".js-share-x");
 const linkCard = document.querySelector(".js-link");
+const link = document.querySelector(".js-linkApi")
 
 
 
@@ -299,15 +177,15 @@ const handleCreateCard = (ev) => {
                             alt="twitter icon">
                     </button>
                 </a>`
+            link.classList.remove("collapsed");
+            link.href = `./card.html?id=${idCard}`;
+            link.innerHTML = `https://dev.adalab.es/api/info/${idCard}`
         })
 
 
 }
 
 createCardButton.addEventListener("click", handleCreateCard);
-
-
-
 
 
 
