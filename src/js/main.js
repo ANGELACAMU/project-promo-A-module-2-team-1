@@ -123,15 +123,7 @@ const buttonCard = document.querySelector(".js-button-card");
 const cardCreated = document.querySelector(".js-card-created");
 const shareX = document.querySelector(".js-share-x");
 const linkCard = document.querySelector(".js-link");
-<<<<<<< HEAD
-const link = document.querySelector(".js-linkApi")
-
-
-
-const createCardButton = document.querySelector(".js-button-card");
-=======
 const link = document.querySelector(".js-linkApi");
->>>>>>> popup
 
 const handleCreateCard = (ev) => {
     ev.preventDefault();
@@ -156,35 +148,6 @@ const handleCreateCard = (ev) => {
                         <img class="button_twitter_icon2" src="/images/square-x-twitter-brands-solid.svg"
                             alt="twitter icon">
                     </button>
-<<<<<<< HEAD
-                </a>`
-            link.classList.remove("collapsed");
-            link.href = `./card.html?id=${idCard}`;
-            link.innerHTML = `https://dev.adalab.es/api/info/${idCard}`
-        })
-
-
-}
-
-createCardButton.addEventListener("click", handleCreateCard);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
                 </a>`;
             link.classList.remove("collapsed");
             link.href = `./card.html?id=${idCard}`;
@@ -193,4 +156,3 @@ createCardButton.addEventListener("click", handleCreateCard);
 };
 
 buttonCard.addEventListener("click", handleCreateCard);
->>>>>>> popup
