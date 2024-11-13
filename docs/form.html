@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
   <script type="module" crossorigin src="./form.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-3cfb730f.js">
   <link rel="modulepreload" crossorigin href="./js/main.js">
-  <link rel="stylesheet" href="./assets/main-b383efbb.css">
+  <link rel="stylesheet" href="./assets/main-2a432a96.css">
 </head>
 
 <body class="body-formulario">
@@ -63,7 +64,7 @@
                     </label>
                     <label for="p-two">
                         <input id="p-two" class="p-two js-p-two" type="radio" name="palette">
-                        <div class="paletteTwo">
+                        <div class="js-palette paletteTwo">
                             <div class="paletteTwo-one"></div>
                             <div class="paletteTwo-two"></div>
                             <div class="paletteTwo-three"></div>
@@ -194,12 +195,23 @@
     <fieldset class="fieldset-card ">
         <div class="card">
             <div>
-                <a class="card_button js-button-card" href="./card.html" target="_blank">
+                <a class="card_button js-button-card" href="../card.html" target="_blank">
 
                     <i class="fa-regular fa-id-card card_button_icon1"></i>
 
                     CREAR TARJETA
                 </a>
+                <div class="shares">
+                    <a class="collapsed js-link link-eye" href="" target="_blank">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>VER TARJETA</p>
+                        </div>
+                    </a>
+                    <div class="js-share-x collapsed"> </div>
+
+                </div>
+                <a class="collapsed js-linkApi link-api" href="" target="_blank"> </a>
 
             </div>
 
@@ -208,18 +220,7 @@
                 <p class="link-card"></p>
             </div>
 
-            <div class="js-share-x collapsed">
-                <a href="https://twitter.com/intent/tweet?text=My%20character%20sheet%20by%20PURR~SKILLS%20 ฅ•ω•ฅ &hashtags=purrskills,rol,fichapersonaje,sheet,fy😻"
-                    target="_blank">
-                    <button class="button_twitter twitter-share-button">
-                        Compartir en
-                        <img class="button_twitter_icon2" src="./images/square-x-twitter-brands-solid.svg"
-                            alt="twitter icon">
-                    </button>
-                </a>
 
-
-            </div>
 
         </div>
     </fieldset>
@@ -313,8 +314,9 @@
     
     
     
+    <!--<script type="module" src="./js/share.js"></script> -->
     
-    
+
 </body>
 
 
