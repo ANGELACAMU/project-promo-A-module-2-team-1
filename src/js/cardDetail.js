@@ -7,7 +7,7 @@ const titleCard = document.querySelector(".js-preview");
 const creaturaCard = document.querySelector(".js-creature");
 const rolCard = document.querySelector(".js-skill");
 const claseCard = document.querySelector(".js-class");
-const colorCard = document.querySelector(".paletteThree-three");
+const colorCard = document.querySelector(".container-preview");
 const profilePreview = document.querySelector(".js__profile-image");
 const manaCard = document.querySelector(".js-special");
 
@@ -22,15 +22,12 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
         rolCard.innerHTML = cardData.field3;
         manaCard.innerHTML = cardData.field1;
         claseCard.innerHTML = cardData.field6;
-        colorCard.add("palette-preview-one") = cardData.field5;
+        colorCard.classList.add(`palette-preview-${cardData.field5}`);
         profilePreview.style.backgroundImage = `url(${cardData.photo})`;
-
-
-
 
     })
 
 
-//continuar minuto 55 del video, falta pintar los datos, solo esta pintado el nombre
+
 
 
