@@ -3,9 +3,9 @@
 const paletteOnePreview = document.querySelector(".palette-preview-one");
 const paletteTwoPreview = document.querySelector(".palette-preview-two");
 const paletteThreePreview = document.querySelector(".palette-preview-three");
-const buttonPaletteOne = document.querySelector(".p-one");
-const buttonPaletteTwo = document.querySelector(".p-two");
-const buttonPaletteThree = document.querySelector(".p-three");
+const buttonPaletteOne = document.querySelector(".one");
+const buttonPaletteTwo = document.querySelector(".two");
+const buttonPaletteThree = document.querySelector(".three");
 const containerPreview = document.querySelector(".container-preview");
 
 function clearPalettes() {
