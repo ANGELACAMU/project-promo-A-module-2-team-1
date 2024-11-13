@@ -17,13 +17,13 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     .then(data => {
         console.log(data);
         const cardData = data.data;
-        titleCard.innerHTML = cardData.field2;
-        creaturaCard.innerHTML = cardData.field4;
-        rolCard.innerHTML = cardData.field3;
         manaCard.innerHTML = cardData.field1;
+        titleCard.innerHTML = cardData.field2;
+        rolCard.innerHTML = cardData.field3;
+        creaturaCard.innerHTML = cardData.field4;
+        //colorCard.add("palette-preview-one") = cardData.field5;
         claseCard.innerHTML = cardData.field6;
-        colorCard.add("palette-preview-one") = cardData.field5;
-        profilePreview.style.backgroundImage = `url(${cardData.photo})`;
+        //profilePreview.style.backgroundImage = `url(${cardData.photo})`;
 
 
 
@@ -31,6 +31,6 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     })
 
 
-//continuar minuto 55 del video, falta pintar los datos, solo esta pintado el nombre
+
 
 
